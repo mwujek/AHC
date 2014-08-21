@@ -215,14 +215,15 @@ nav li{
 	position: absolute;
 	top:0;
 	left:0;
-	/*opacity: 0;*/
-	transition:2s all;
+	opacity: 0;
+	transition:1.5s all;
 	
 	
 }
 
 .active-ss{ 
-        /*opacity: 1;*/
+    opacity: 1 !important;
+        
         
     }
 

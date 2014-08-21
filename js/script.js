@@ -8,7 +8,8 @@ $(document).ready(function(){
         scrollingSpeed: 700,
         css3: true,
         anchors: ['nav-1', 'nav-2', 'nav-3', 'nav-4', 'nav-5', 'nav-6', 'nav-7', 'nav-8', 'nav-9', 'nav-10'],
-    	menu: '#mainNav'
+    	menu: '#mainNav',
+    	autoScrolling: true
     });
 
 
@@ -134,7 +135,7 @@ $(document).ready(function(){
         var nextSlide = active.next();
         var lastSlide = $('#fourth');
         var firstSlide = $('#first');
-        var fadeSpeed = 1000;
+        //var fadeSpeed = 1000;
         //console.log('time!'); 
 
         
@@ -142,16 +143,16 @@ $(document).ready(function(){
         //window.alert('YES!');
         active.removeClass('active-ss');
         firstSlide.addClass('active-ss');
-        active.fadeOut();
-        firstSlide.fadeIn();
+        //active.fadeOut();
+        //firstSlide.fadeIn();
 
 } else {
         //if(active-ss ===)
    		
    		active.removeClass('active-ss');
         nextSlide.addClass('active-ss');
-        active.fadeOut();
-        nextSlide.fadeIn();
+        //active.fadeOut();
+        //nextSlide.fadeIn();
 
 
         }
@@ -159,5 +160,5 @@ $(document).ready(function(){
 
     	//slideshow for home page
     $(function() {
-        setInterval(slideSwitch, 3000);
+        setInterval(slideSwitch, 4000);
     });
