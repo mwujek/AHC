@@ -1,0 +1,182 @@
+body,html{
+	height: 100%;
+	font-family: "ff-tisa-web-pro", sans-serif;
+	background: #ecf0f1;
+	color:#2c3e50;
+}
+
+/*?????????????????????????????????????????????
+?????????????????????????????????????????????
+?????????????????????????????????????????????*/
+/*Old browsers and Warnings*/
+#ie_warning, #js_warning{
+	width:100%;
+	height:100%;
+	background-color: #0074d9;
+	color:#fff;
+	position: fixed;
+	top:0px;
+	left:0;
+	z-index: 100;
+	font-family: sans-serif;
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+.warning_content{
+	max-width: 25em;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.warning_content a, .warning_content a:visited{
+	color:#ff851b;
+	opacity: 0.8;
+}
+
+.warning_content a:hover{
+	opacity: 1;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Links Styles*/
+.button{
+	display: inline-block;
+	margin: 0 auto;
+	border:1px white solid;
+	padding: 10px 19px;
+	color:#fff !important;
+	transition:0.3s all;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background: #fff;
+	color:#0074d9 !important;
+}
+
+.link-wrapper{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Typography*/
+p{
+	font-family: "ff-tisa-web-pro", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "rooney-web", sans-serif;
+
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Navigation*/
+
+nav{
+	position: fixed;
+	top:0px;
+	left:15px;
+	padding: 10px;
+	transition:0.3s all;
+	z-index: 100;
+}
+
+
+
+nav ul, nav li{
+	list-style: none;
+	padding: 0;
+	transition: 0.3s all;
+}
+
+nav ul li a{
+	text-decoration: none;
+	transition: 0.3s all;
+	color:#7f8c8d;
+}
+
+nav li{
+	margin-bottom: 5px;
+}
+
+#mainNav .active a{
+	padding-left: 10px;
+	color:#2c3e50 !important;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* Custom Slide CSS */
+
+.section{
+	text-align: center;
+	padding: 0px 50px;
+}
+
+.main-heading{
+
+}
+
+.section-main-content{
+	max-width: 700px;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 22px;
+}
+
+
+.subtitle{
+	text-align: center;
+}
+
+/* owl slider styles */
+.recommend-slides h1, .recommend-slides h3{
+	text-align: center;
+}
+
+.rec-name{
+	font-weight: 100;
+}
+.rec-title{
+	font-style: italic;
+}
+
+
+.owl-prev, .owl-next{
+	position: absolute;
+	background: white;
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	border-radius: 15px;
+	text-align: center;
+	top:25%;
+}
+.owl-prev{
+	left:-60px;
+}
+
+.owl-next{
+	right:-60px;
+}
+
+/*  artwork section  */
+
+.artwork-container{
+	max-width: 600px;
+	max-height: 400px;
+	margin: 0 auto;
+	display: block;
+}

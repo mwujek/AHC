@@ -1,0 +1,13 @@
+body,html{
+	height: 100%;
+}
+
+#ie_warning, #js_warning{
+	max-width: 600px;
+	margin-top: 100px;
+	background-color: #0074d9;
+	color:#fff;
+	position: fixed;
+	z-index: 100;
+	font-family: sans-serif;
+}
