@@ -1,5 +1,18 @@
 $(document).ready(function(){
 
+	var navList = $('#mainNav');
+	var navTitle = $('nav h1');
+	var subMenu = $('#sub-menu-list');
+	var subMenuLink = $('li.sub-menu');
+
+	navList.addClass('hiddenNav'); //start with hidden nav
+	navTitle.addClass('whiteTitle'); // start with white title
+	//subMenu.slideUp(); // start w sub-menu hidden
+
+	//go to slide
+	function goToSlide(slideSection){
+		$.fn.fullpage.moveTo(4, slideSection); 
+	}
 
 	//fullPage.js initialization
 	 $('#fullpage').fullpage({
@@ -9,9 +22,48 @@ $(document).ready(function(){
         css3: true,
         anchors: ['nav-1', 'nav-2', 'nav-3', 'nav-4', 'nav-5', 'nav-6', 'nav-7', 'nav-8', 'nav-9', 'nav-10'],
     	menu: '#mainNav',
-    	autoScrolling: true
+    	slidesNavigation: false,
+    	autoScrolling: true,
+    	onLeave: function(index, nextIndex, direction){
+            //after leaving section 2
+            if(index == '1' && direction =='down'){
+                navList.removeClass('hiddenNav');
+                navTitle.removeClass('whiteTitle');
+            }
+
+            if(index == '4'){
+                subMenu.removeClass('slideDown');
+           
+            }
+
+        },
+        afterLoad: function(anchorLink, index){
+            //using index
+
+            //fallback for showing nav title?
+
+            if(index == '1'){
+                navList.addClass('hiddenNav');
+                navTitle.addClass('whiteTitle');
+            }
+
+            if(index == '4'){
+            	//subMenu.slideDown();
+            	subMenu.addClass('slideDown');
+            }
+        }
+        
     });
 
+	 // moving to program slides
+
+	 /*Scrolling to the section with the anchor link `firstSlide` and to the 2nd Slide */
+	 subMenuLink.on('click', function(e){
+	 	e = $(this);
+	 	var whichSection = e.data('index');
+	 	goToSlide(whichSection);
+	 });
+		
 
 	 // carousel initialization
 

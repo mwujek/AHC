@@ -6,10 +6,11 @@
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/style.css">
+  <!-- add typeicons -->
+<!--   <link rel='stylesheet' href='css/typicons.css' /> -->
 
 
-<!--     <link rel="stylesheet" href="css/normalize.css">
--->
+     <link rel="stylesheet" href="css/normalize.css">
 <!-- Load new version of JQuery, old browsers aren't supported -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
@@ -54,11 +55,17 @@
   </noscript> -->
   <nav>
     <h1>ArtEsteem</h1>
-    <ul id="mainNav">
+    <ul id="mainNav" class="hiddenNav">
       <li data-menuanchor="nav-1" class="active"><a href="#nav-1">Home</a></li>
       <li data-menuanchor="nav-2"><a href="#nav-2">Introduction</a></li>
       <li data-menuanchor="nav-3"><a href="#nav-3">Social Justice</a></li>
-      <li data-menuanchor="nav-4"><a href="#nav-4">Programs</a></li>
+      <li data-menuanchor="nav-4"><a href="#nav-4"><span>Programs</a>
+        <ul id="sub-menu-list">
+          <li class="sub-menu toSlide" data-index="1">Visual Art</li>
+          <li class="sub-menu toSlide" data-index="2">Cultural Art</li>
+          <li class="sub-menu toSlide" data-index="3">Fashion Design</li>
+        </ul>
+      </li>
       <li data-menuanchor="nav-5"><a href="#nav-5">Self As Super Hero</a></li>
       <li data-menuanchor="nav-6"><a href="#nav-6">Professional Development</a></li>
       <li data-menuanchor="nav-7"><a href="#nav-7">Impact</a></li>
@@ -112,6 +119,11 @@
         <h1 class="main-heading">Programs</h1>
         <div class="section-main-content">
           <p>During and after-school Visual Art, Cultural Arts (rhythm and sound), and Fashion Design classes combine Attitudinal Healing concepts, art instruction, and classroom-management tools in an art integrated curriculum linked to Common Core.</p>
+
+          <div class="instructions">
+            
+          <p>Please use keyboard arrows or links in the navigation menu to view all programs.</p>
+          </div> <!-- end instructions -->
         </div> <!-- end of content -->
       </div> <!-- end of horizontal slider -->
       <div class="slide">
@@ -142,7 +154,7 @@
       <div class="section-main-content">
         <p>The Oakland Super Heroes Mural Project is a public art project that stems from ArtEsteem’s Visual Art Classes. Once a school is identified, art instructors work hand in hand with school teachers to implement the “Self As Super Hero” Curriculum, which takes children, youth, and adults through a journey of self exploration, family and cultural research, societal assessment, and development of aesthetic tools for artistic creation. The ArtEsteem Super Hero is a re-created version of the self that embodies super powers that help create a more loving and peaceful world. Once children collaboratively develop their own super heroes, they use these stories to conceptually design a mural. They get the opportunity to go through the legal approval process with Caltrans and  the City of Oakland and then work with local artists to see their artwork and visions for the future come to life.</p>
 
-        <p>Click <a href="http://oaklandmuralproject.com/">here</a> to visit the Oakland Super Heroes Mural Project website and learn more!</p>
+        <p>Click <a href="http://oaklandmuralproject.com/" target="_blank">here</a> to visit the Oakland Super Heroes Mural Project website and learn more!</p>
         </div> <!-- end of content -->
       </div> <!-- end of slide -->
 
