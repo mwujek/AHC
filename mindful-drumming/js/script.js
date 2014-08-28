@@ -1,11 +1,12 @@
 $(document).ready(function(){
 
-	var navList = $('#mainNav');
+	//var navList = $('#mainNav');
+	var navListElements = $('#mainNav li a');
 	var navTitle = $('nav h1');
 	var subMenu = $('#sub-menu-list');
 	var subMenuLink = $('li.sub-menu');
 
-	navList.addClass('hiddenNav'); //start with hidden nav
+	navListElements.addClass('whiteTitle'); //start with hidden nav
 	navTitle.addClass('whiteTitle'); // start with white title
 	//subMenu.slideUp(); // start w sub-menu hidden
 
@@ -27,8 +28,9 @@ $(document).ready(function(){
     	onLeave: function(index, nextIndex, direction){
             //after leaving section 2
             if(index == '1' && direction =='down'){
-                navList.removeClass('hiddenNav');
+                //navList.removeClass('hiddenNav');
                 navTitle.removeClass('whiteTitle');
+                navListElements.removeClass('whiteTitle');
             }
 
             if(index == '4'){
@@ -43,8 +45,9 @@ $(document).ready(function(){
             //fallback for showing nav title?
 
             if(index == '1'){
-                navList.addClass('hiddenNav');
+                //navList.addClass('hiddenNav');
                 navTitle.addClass('whiteTitle');
+                navListElements.addClass('whiteTitle');
             }
 
             if(index == '4'){

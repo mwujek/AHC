@@ -2,7 +2,13 @@ $nav-font-color: #2c3e50;
 $nav-font-color-inactive: #95a5a6;
 $nav-font-size: 1em;
 $nav-margin: 10px;
-$content-width: 650px;
+$content-width: 700px;
+
+$button-hover-color:#34495e;
+$button-border-color: #2c3e50;
+
+$link-color:#2980b9;
+$link-hover-color:#3498db;
 
 $carousel-bg:#fff;
 $carousel-padding: 20px;
@@ -11,6 +17,9 @@ $carousel-margin-top: 30px;
 
 //slide navigation items
 $circle-nav-diameter:30px;
+
+//heading circles
+$heading-circle-diameter:200px;
 
 // add typeicons
 @font-face {
@@ -90,6 +99,15 @@ body,html{
 	text-align: center;
 }
 
+a{
+	color:$link-color;
+	transition:0.3s all;
+}
+
+a:hover{
+	color: $link-hover-color;
+}
+
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -103,6 +121,20 @@ h1,h2,h3,h4,h5,h6{
 	font-family: "rooney-web", sans-serif;
 
 }
+
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Component CSS*/
+.circle-heading{
+	width: $heading-circle-diameter;
+	height: $heading-circle-diameter;
+	border-radius: $heading-circle-diameter/2;
+	background-size: cover;
+	margin: 0 auto;
+}
+
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -141,6 +173,13 @@ nav ul li a{
 	text-decoration: none;
 	transition: 0.3s all;
 	color:$nav-font-color-inactive;
+
+}
+
+#mainNav li a:hover{
+	
+	text-decoration: underline;
+	
 }
 
 nav li{
@@ -235,19 +274,22 @@ nav li{
 	position: absolute;
 	top:0;
 	left:0;
+
 }
 
-#home-header{
-	margin-top: 25%;
-}
 
 .section{
 	text-align: center;
-	padding: 0px 50px;
+	// padding: 0px 50px;
 }
 
-.main-heading{
-
+.main-heading-intro{
+	font-family: 'rooney-web', sans-serif;
+	color:#fff;
+	margin: 25% auto 0px auto;
+	max-width: 807px;
+	font-size: 0.7em;
+	line-height: 1.2em;
 }
 
 .section-main-content{
@@ -307,14 +349,24 @@ nav li{
 ///////////////////////////////////////////////////*/
 /* home section */
 #home-page{
-	/*background: url(http://cl.ly/image/1j2I0H3P0w0B/img_04271.jpg);*/
-	background: #333;
+	background: url(http://attitudinalhealingconnection.files.wordpress.com/2012/09/img_5961.jpg);
+	background-size: cover;
 }
 
 #home-page{
 	color:#fff;
-	font-size: 40px;
+	font-size: 20px;
 	padding: 0px;
+}
+
+#home-page .fp-tableCell{
+	background: rgba(0,0,0,0.6);
+}
+
+#home-heading{
+	z-index: 1000;
+	text-align: center;
+
 }
 
 /* Slideshow */
@@ -365,15 +417,104 @@ nav li{
 	font-weight: 900;
 }
 
+#program-list{
+
+	margin: 0;
+	padding-left: 0px !important;
+	text-indent: 0;
+	
+	li{
+		margin: 0;
+		display: inline-block;
+		border:1px solid $button-border-color;
+		padding: 5px 10px;
+		margin-right: 10px;
+		transition:0.3s all;
+	}
+	li:hover{
+		background-color: $button-hover-color;
+		color:#fff;
+
+	}
+}
+
+ 
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Intro section  */
+
+#intro{
+	background: url(http://attitudinalhealingconnection.files.wordpress.com/2012/09/img_4441.jpg);
+	background-size: cover;
+	color:#fff;
+}
+
+#intro .fp-tableCell{
+	background: rgba(0,0,0,0.4);
+}
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  What is Mindful Drumming? section  */
+
+#what-is-MD .circle-heading{
+
+	background: url(http://attitudinalhealingconnection.files.wordpress.com/2012/09/img_5930.jpg);
+	background-size: cover;
+	background-position: 43% 100%;
+}
+
+
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
-/*  artwork section  */
+/*  who section  */
 
-.artwork-container{
-	max-width: 600px;
-	max-height: 400px;
-	margin: 0 auto;
-	display: block;
+.who em{
+	font-style: normal;
+	font-weight: 900;
 }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  health staff section  */
+.healthy-staff-slides p{
+	text-align: center;
+}
+
+.quotes-from-ppl{
+	display: inline-block;
+	position: absolute;
+	width:300px;
+	left:-350px;
+	font-style: italic;
+}
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Schedule Workshop  */
+
+
+.contact-info{
+	text-align: center;
+	list-style: none;
+}
+
+.contact-info li:first-child{
+	font-weight: 900;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Photos  */
+.photo-slides{
+	text-align: center;
+	img{
+		height: 400px;
+	}
+}
+

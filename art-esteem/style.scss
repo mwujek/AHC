@@ -1,0 +1,460 @@
+$nav-font-color: #2c3e50;
+$nav-font-color-inactive: #95a5a6;
+$nav-font-size: 1em;
+$nav-margin: 10px;
+$content-width: 650px;
+
+$button-hover-color:#34495e;
+$button-border-color: #2c3e50;
+$inactive-button-color:#ccc;
+
+$link-color:#2980b9;
+$link-hover-color:#3498db;
+
+$carousel-bg:#fff;
+$carousel-padding: 20px;
+$carousel-border-radius:10px;
+$carousel-margin-top: 30px;
+
+//slide navigation items
+$circle-nav-diameter:30px;
+
+// add typeicons
+@font-face {
+  font-family: 'typicons';
+  src: url("icons/typicons.eot");
+  src: url("icons/typicons.eot?#iefix") format('embedded-opentype'),
+       url("icons/typicons.woff") format('woff'),
+       url("icons/typicons.ttf") format('truetype'),
+       url("icons/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,html{
+	height: 100%;
+	font-family: "ff-tisa-web-pro", sans-serif;
+	background: #ecf0f1;
+	color:$nav-font-color;
+}
+
+/*?????????????????????????????????????????????
+?????????????????????????????????????????????
+?????????????????????????????????????????????*/
+/*Old browsers and Warnings*/
+#ie_warning, #js_warning{
+	width:100%;
+	height:100%;
+	background-color: #0074d9;
+	color:#fff;
+	position: fixed;
+	top:0px;
+	left:0;
+	z-index: 100;
+	font-family: sans-serif;
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+.warning_content{
+	max-width: 25em;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.warning_content a, .warning_content a:visited{
+	color:#ff851b;
+	opacity: 0.8;
+}
+
+.warning_content a:hover{
+	opacity: 1;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Links Styles*/
+.button{
+	display: inline-block;
+	margin: 0 auto;
+	border:1px white solid;
+	padding: 10px 19px;
+	color:#fff !important;
+	transition:0.3s all;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.button:hover{
+	background: #fff;
+	color:#0074d9 !important;
+}
+
+.link-wrapper{
+	margin-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+a{
+	color:$link-color;
+	transition:0.3s all;
+}
+
+a:hover{
+	color: $link-hover-color;
+}
+
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Typography*/
+p{
+	font-family: "ff-tisa-web-pro", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: "rooney-web", sans-serif;
+
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Navigation*/
+
+nav{
+	position: fixed;
+	top:0px;
+	left:15px;
+	padding: 10px;
+	transition:0.3s all;
+	z-index: 100;
+}
+
+nav h1{
+	color:$nav-font-color;
+}
+
+nav ul{
+	position: relative;
+	left:0;
+	transition:0.3s all;
+}
+
+
+
+nav ul, nav li{
+	list-style: none;
+	padding: 0;
+	transition: 0.3s all;
+	font-size: $nav-font-size;
+}
+
+nav ul li a{
+	text-decoration: none;
+	transition: 0.3s all;
+	color:$nav-font-color-inactive;
+
+}
+
+#mainNav li a:hover{
+	
+	text-decoration: underline;
+	
+}
+
+nav li{
+	margin-bottom: $nav-margin;
+}
+
+#mainNav .active a{
+	padding-left: 10px;
+	color:$nav-font-color !important;
+}
+
+#mainNav{
+	transition:0.5s all;
+}
+
+.hiddenNav{
+	left: -250px;
+}
+
+.whiteTitle{
+	color: #fff !important;
+}
+
+
+/*
+//////////////////////////////////////
+///////////////////sub-nav
+//////////////////////////////////////
+*/
+
+.sub-menu-list{
+	margin: 0px;
+	height: 0px;
+	transition:0.5s all;
+	opacity: 0;
+	visibility: hidden;
+}
+.sub-menu{}
+.sub-menu:hover{
+	cursor: pointer;
+}
+
+.slideDown{
+	visibility: visible !important;
+	margin: $nav-margin 0px !important;
+	margin-bottom: $nav-margin !important;
+	margin-left: $nav-margin*3 !important;
+	opacity: 1 !important;
+	height: 72px !important;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* Prev, Next navingation for horizontal slides */
+
+
+.fp-controlArrow{
+	display: none !important;
+}
+
+// .fp-prev, .fp-next{
+// 	background: white;
+// 	display: inline-block;
+// 	width:$circle-nav-diameter !important;
+// 	height:$circle-nav-diameter !important;
+// 	line-height: $circle-nav-diameter;
+// 	border-radius: $circle-nav-diameter/2;
+// 	text-align: center;
+// 	top:52%;
+// 	border:none !important;
+// 	padding: 0px;
+// 	margin: 0px !important;
+// }
+// .fp-prev{
+// 	left:32px !important;
+// }
+
+// .fp-next{
+// 	right:32px !important;
+// }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* Custom Slide CSS */
+
+.dark-filter{	
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+
+}
+
+
+.section{
+	text-align: center;
+	padding: 0px 50px;
+}
+
+.main-heading-intro{
+	font-family: 'rooney-web', sans-serif;
+	color:#fff;
+	margin: 25% auto 0px auto;
+	max-width: 807px;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 1.2em;
+}
+
+.section-main-content{
+	max-width: $content-width;
+	margin: 0 auto;
+	text-align: left;
+	line-height: 22px;
+}
+
+
+.subtitle{
+	text-align: center;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* owl slider styles */
+.recommend-slides h1, .recommend-slides h3{
+	text-align: center;
+}
+
+.rec-name{
+	font-weight: 100;
+}
+.rec-title{
+	font-style: italic;
+}
+
+
+.owl-prev, .owl-next{
+	position: absolute;
+	background: white;
+	width:$circle-nav-diameter;
+	height:$circle-nav-diameter;
+	line-height: $circle-nav-diameter;
+	border-radius: $circle-nav-diameter/2;
+	text-align: center;
+	top:25%;
+}
+.owl-prev{
+	left:-60px;
+}
+
+.owl-next{
+	right:-60px;
+}
+
+.owl-carousel{
+	background: $carousel-bg;
+	padding: $carousel-padding $carousel-padding*2;
+	border-radius: $carousel-border-radius;
+	margin-top: $carousel-margin-top;
+}
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* home section */
+#home-page{
+	/*background: url(http://cl.ly/image/1j2I0H3P0w0B/img_04271.jpg);*/
+	background: #333;
+}
+
+#home-page{
+	color:#fff;
+	font-size: 40px;
+	padding: 0px;
+}
+
+/* Slideshow */
+
+
+.ss-frame{
+	width:100%;
+	height:100%;
+	
+	background-size: cover !important; 
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 0;
+	transition:1.5s all;
+	
+	
+}
+
+.active-ss{ 
+    opacity: 1 !important;
+        
+        
+    }
+
+#first{
+	background: url('http://bit.ly/1uZPZEa');
+}
+
+#second{
+	background: url('http://bit.ly/1kX6Sf6');
+}
+
+#third{
+	background: url('http://bit.ly/1wbTjNT');
+}
+
+#fourth{
+	background: url('http://bit.ly/1tnXfqa');
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* Program section */
+
+.instructions p{
+	font-weight: 900;
+}
+
+.instructions{
+	text-align: center;
+}
+
+.program-list{
+
+	margin: 0;
+	padding-left: 0px !important;
+	text-indent: 0;
+	
+	li{
+		margin: 0;
+		display: inline-block;
+		border:1px solid $button-border-color;
+		padding: 5px 10px;
+		margin-right: 10px;
+		transition:0.3s all;
+	}
+	li:hover{
+		background-color: $button-hover-color;
+		color:#fff;
+
+	}
+}
+
+.inActive-link{
+	color:$inactive-button-color !important;
+	border:$inactive-button-color 1px solid !important;
+}
+
+.inActive-link:hover{
+	cursor:default !important; 
+	color:$inactive-button-color !important;
+	border:$inactive-button-color 1px solid!important;
+	background: none !important;
+}
+
+ 
+
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  artwork section  */
+
+.artwork-container{
+	max-width: 600px;
+	max-height: 400px;
+	margin: 0 auto;
+	display: block;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Contact Us  */
+
+#contact-us{
+	text-align: center;
+
+	ul{
+		list-style: none;
+	}
+}
+
+
