@@ -129,6 +129,12 @@ nav li {
 .whiteTitle {
   color: #fff !important; }
 
+.lightness {
+  color: #fff !important; }
+
+.darkness {
+  color: #333 !important; }
+
 /*
 //////////////////////////////////////
 ///////////////////sub-nav
@@ -150,7 +156,15 @@ nav li {
   margin-bottom: 10px !important;
   margin-left: 30px !important;
   opacity: 1 !important;
-  height: 72px !important; }
+  height: 60px !important; }
+
+.slideDown2 {
+  visibility: visible !important;
+  margin: 10px 0px !important;
+  margin-bottom: 10px !important;
+  margin-left: 30px !important;
+  opacity: 1 !important;
+  height: 100px !important; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////

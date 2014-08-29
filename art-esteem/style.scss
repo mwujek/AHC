@@ -187,6 +187,13 @@ nav li{
 	color: #fff !important;
 }
 
+.lightness{
+	color:#fff !important;
+}
+
+.darkness{
+	color:#333 !important;
+}
 
 /*
 //////////////////////////////////////
@@ -212,7 +219,16 @@ nav li{
 	margin-bottom: $nav-margin !important;
 	margin-left: $nav-margin*3 !important;
 	opacity: 1 !important;
-	height: 72px !important;
+	height: 60px !important;
+}
+
+.slideDown2{
+	visibility: visible !important;
+	margin: $nav-margin 0px !important;
+	margin-bottom: $nav-margin !important;
+	margin-left: $nav-margin*3 !important;
+	opacity: 1 !important;
+	height: 100px !important;
 }
 
 /*///////////////////////////////////////////////////
