@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>AHC</title>
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/jquery-rebox.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- add typeicons -->
@@ -27,9 +28,16 @@
 
   <!-- Carousel script -->
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <!-- Jquery Validate --> 
+  <script type="text/javascript" src="js/jquery.validate.js"></script>
+  <!-- Jquery Lightbox -->
+  <script type="text/javascript" src="js/jquery-rebox.js"></script>
 
-  <!-- load our script -->
+
+
+  <!-- load the scripts -->
   <script src="js/script.js"></script>
+  
 </head>
 <body>
 
@@ -69,7 +77,7 @@
       <li data-menuanchor="nav-5"><a href="#nav-5">Self As Super Hero</a>
 
         <ul class="sub-menu-list" id="sub-menu-OMP"> 
-          <li class="sub-menu toSlide" data-index="1">Images and Stories</li>
+          <li class="sub-menu toSlide" data-index="1">Images &amp; Stories</li>
           <li class="sub-menu toSlide" data-index="2">Student &amp; Teacher Quotes</li>
         </ul>
 
@@ -84,6 +92,15 @@
       <li data-menuanchor="nav-13"><a href="#nav-13">Contact Us</a></li>
 
     </ul>
+    <div id="nav-bottom"> <!-- start footer on nav -->
+      <ul>
+        <li class="footer-title">Attitudinal Healing Connection, Inc.</li>
+        <li>3278 West Street</li>
+        <li>Oakland, CA 95608</li>
+        <li>510.652.5530</li>
+        <li><a href="mailto:artesteem@ahc-oakland.org">artesteem@ahc-oakland.org</a></li>
+      </ul>
+    </div> <!-- end footer on nav -->
   </nav>
 
   <div id="fullpage">
@@ -107,17 +124,22 @@
 
 
       <!-- Introduction Slide -->
-      <div class="section" data-navColor="light">
+      <div class="section" id="intro-section" data-navColor="light">
+        <div class="top-swatch" id="swatch-intro"></div>
+        <div class="pair-wrapper">
+        <div class="chapter-circles pair" id="circle-intro"></div>
         <h1 class="main-heading">Introduction</h1>
         <div class="section-main-content">
           <p>ArtEsteem is Attitudinal Healing Connection’s award-winning art and literacy program that develops creative, engaged and successful children and youth through building knowledge and emotional, social, academic and intellectual skills.</p>
 
           <p>Founded in 1995, ArtEsteem engages students and supports their positive development – body, mind, and heart. Participants discover how to self reflect and dream, as well as focus on their tasks and “follow through” by completing their art projects. Our methods guide students to think practically about the world and their abilities to manifest positive and creative outcomes. Classes also build students’ language and math literacy, aesthetic appreciation, and listening, critical thinking and performance skills. Our students learn – through dialogue, reading, and writing – conceptual understandings of social, historical, and cultural topics to engage and inform their minds, and develop the whole child, in expansive ways.</p>
         </div> <!-- end of content -->
+        </div> <!-- end of pair wrapper -->
       </div> <!-- end of slide -->
 
       <!-- Social Justice Slide -->
       <div class="section" id="social-justice" data-navColor="dark">
+        <div class="chapter-circles"></div>
         <h1 class="main-heading">Social Justice</h1>
         <div class="section-main-content">
           <h3 class="subtitle">We Don’t Do Art Just For Art’s Sake</h3>
@@ -127,16 +149,18 @@
 
 
       <!-- Programs Slide -->
-      <div class="section" data-navColor="dark">
-
+      <div class="section" id="program-section" data-navColor="dark">
+        
         <div class="slide">
+        <div class="top-swatch"></div>
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Programs</h1>
           <div class="section-main-content">
             <p>During and after-school Visual Art, Cultural Arts (rhythm and sound), and Fashion Design classes combine Attitudinal Healing concepts, art instruction, and classroom-management tools in an art integrated curriculum linked to Common Core.</p>
 
             <div class="instructions">
 
-              <h4>View program descriptions here:</h4>  
               <ul class="program-list">
                 <li class="sub-menu toSlide" data-index="2">Visual Art</li>
                 <li class="sub-menu toSlide" data-index="3">Cultural Art</li>
@@ -145,15 +169,18 @@
 
             </div> <!-- end instructions -->
           </div> <!-- end of content -->
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end of horizontal slider -->
         <div class="slide">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Visual Art</h1>
           <div class="section-main-content">
             <p>The Visual Arts class provides a multi-disciplinary curriculum that takes children and youth through a journey of self-exploration, critical thinking, family and cultural research, societal assessment, and the use of aesthetic tools for skill development and artistic creation. Students learn, but are not limited to, basic drawing, printmaking, and painting techniques. We also can offer a variety of visual arts disciplines, such as digital media, architecture, graphic design, etc.</p>
 
             <div class="instructions">
 
-              <h4>View other programs:</h4>  
+              
               <ul class="program-list">
                 <li class="sub-menu toSlide inActive-link" data-index="2">Visual Art</li>
                 <li class="sub-menu toSlide" data-index="3">Cultural Art</li>
@@ -162,16 +189,19 @@
 
             </div> <!-- end instructions -->
           </div> <!-- end of content -->
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end of horizontal slider -->
 
         <div class="slide">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Cultural Art (rhythm and sound)</h1>
           <div class="section-main-content">
-            <p>FDuring and after-school Visual Art, Cultural Arts (rhythm and sound), and Fashion Design classes combine Attitudinal Healing concepts, art instruction, and classroom-management tools in an art integrated curriculum linked to Common Core.</p>
+            <p>During and after-school Visual Art, Cultural Arts (rhythm and sound), and Fashion Design classes combine Attitudinal Healing concepts, art instruction, and classroom-management tools in an art integrated curriculum linked to Common Core.</p>
 
             <div class="instructions">
 
-              <h4>View other programs:</h4>  
+              
               <ul class="program-list">
                 <li class="sub-menu toSlide" data-index="2">Visual Art</li>
                 <li class="sub-menu toSlide inActive-link" data-index="3">Cultural Art</li>
@@ -180,16 +210,19 @@
 
             </div> <!-- end instructions -->
           </div> <!-- end of content -->
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end of horizontal slider -->
 
         <div class="slide">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Fashion Design</h1>
           <div class="section-main-content">
             <p>The Fashion Design Class is based on the investigation of self through an exploration of respect, confidence, performance and industry. The class is a study of fashion design and textile design. Students explore the historical and cultural influences in fashion and learn basic hand stitching, fabric-dyeing methods, textile design, and how to use a sewing machine.</p>
 
             <div class="instructions">
 
-              <h4>View other programs:</h4>  
+              
               <ul class="program-list">
                 <li class="sub-menu toSlide" data-index="2">Visual Art</li>
                 <li class="sub-menu toSlide" data-index="3">Cultural Art</li>
@@ -198,50 +231,76 @@
 
             </div> <!-- end instructions -->
           </div> <!-- end of content -->
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end of horizontal slider -->
       </div> <!-- end of ENTIRE slide -->
 
       <!-- Self As Super Hero Curriculum Slide -->
-      <div class="section" data-navColor="light">
+      <div class="section" id="sas-section"data-navColor="light">
+        
         <div class="slide">
+        <div class="top-swatch"></div>
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Self As Super Hero Curriculum</h1>
           <div class="section-main-content">
-            <p>The “Self As Super Hero” Curriculum takes children, youth, and adults through a journey of self exploration, family and cultural research, societal assessment, and development of aesthetic tools for artistic creation. First, a school and/or teacher is identified and then art instructors work hand in hand with school teachers to implement the curriculum. They take the students through a journey, using the ArtEsteem Super Hero to re-define the self that embodies super powers that help create a more loving and peaceful world. Once children collaboratively develop their own super heroes, they use these stories to conceptually design a mural as part of the Oakland Super Heroes Mural Project. The Self As Super Hero Curriculum can be found in the “Self As Super Hero Book: Handbook for Creating the Life Size Self Portrait” which is available for <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=taKh9mfxvHOXgoG7UJg6FUATTtZhTlySHphYejh7UJYg_hmUi-tqdhkZNG4&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198a78d7ca84119a1f366e3aff044ca2d31" target="_blank">purchase here</a>.</p>
+            <p>The “Self As Super Hero” Curriculum takes children, youth, and adults through a journey of self exploration, family and cultural research, societal assessment, and development of aesthetic tools for artistic creation. First, a school and/or teacher is identified and then art instructors work hand in hand with school teachers to implement the curriculum. They take the students through a journey, using the ArtEsteem Super Hero to re-define the self that embodies super powers that help create a more loving and peaceful world. Once children collaboratively develop their own super heroes, they use these stories to conceptually design a mural as part of the Oakland Super Heroes Mural Project. The Self As Super Hero Curriculum can be found in the <span class="bold">&#34;Self As Super Hero Book: Handbook for Creating the Life Size Self Portrait&#34;</span> which is available for <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=taKh9mfxvHOXgoG7UJg6FUATTtZhTlySHphYejh7UJYg_hmUi-tqdhkZNG4&dispatch=50a222a57771920b6a3d7b606239e4d529b525e0b7e69bf0224adecfb0124e9b61f737ba21b08198a78d7ca84119a1f366e3aff044ca2d31" target="_blank">purchase here</a>.</p>
 
             <p>Click <a href="http://oaklandmuralproject.com/" target="_blank">here</a> to visit the Oakland Super Heroes Mural Project website and learn more!</p>
+
+            <div class="instructions">
+
+              
+              <ul class="program-list">
+                <li class="sub-menu toSlide inActive-link" data-index="1">Curriculum</li>
+                <li class="sub-menu toSlide" data-index="2">Images &amp; Stories</li>
+                <li class="sub-menu toSlide" data-index="3">Student &amp; Teacher Quotes</li>
+              </ul>
+
+            </div> <!-- end instructions -->
           </div> <!-- end of content -->
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end hornizontal slide -->
 
         <div class="slide">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Super Hero Images and Stories</h1>
           <div class="section-main-content">
-            <p style="text-align:center; color:red">To be added soon.</p>
+            <p style="text-align:center; color:red">To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.</p>
 
             <div class="instructions">
 
               <ul class="program-list">
+                <li class="sub-menu toSlide-link" data-index="1">Curriculum</li>
                 <li class="sub-menu toSlide inActive-link" data-index="2">Images &amp; Stories</li>
                 <li class="sub-menu toSlide" data-index="3">Teacher &amp; Student Quotes</li>
               </ul>
 
             </div> <!-- end instructions -->
+            </div><!-- end of pair wrapper -->
           </div> <!-- end of content -->
         </div> <!-- end of horizontal slider -->
 
         <div class="slide">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair"></div>
           <h1 class="main-heading">Student &amp; Teacher Quotes</h1>
           <div class="section-main-content">
-            <p style="text-align:center; color:red">To be added soon.</p>
+            <p style="text-align:center; color:red">To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.To be added soon.</p>
 
             <div class="instructions">
 
               <ul class="program-list">
+                <li class="sub-menu toSlide" data-index="1">Curriculum</li>
                 <li class="sub-menu toSlide" data-index="2">Images &amp; Stories</li>
                 <li class="sub-menu toSlide inActive-link" data-index="3">Teacher &amp; Student Quotes</li>
               </ul>
 
             </div> <!-- end instructions -->
-          </div> <!-- end of content -->
+            </div> <!-- end of content -->
+            </div><!-- end of pair wrapper -->
+          
         </div> <!-- end of horizontal slider -->
 
 
@@ -253,16 +312,21 @@
 
 
       <!-- Oakland Mural Project Slide -->
-      <div class="section" data-navColor="dark">
-        <h1 class="main-heading">Oakland Super Heroes Mural Project</h1>
+      <div class="section" id="omp" data-navColor="dark">
+        <div class="top-swatch" id="top-swatch-OMP"></div>
         <div class="section-main-content">
+        <div class="pair-wrapper">
+          <div class="chapter-circles pair" id="circle-omp"></div>
+          <h1 class="main-heading">Oakland Super Heroes Mural Project</h1>
           <p>The Oakland Super Heroes Mural Project is a public art project that stems from ArtEsteem’s Visual Art Classes.  Once students have created their Super Heroes in the classroom setting, they get the opportunity to go through the legal approval process with Caltrans and  the City of Oakland and then work with local artists to see their artwork and visions for the future come to life. <a href="http://oaklandmuralproject.com/" target="_blank">Click here</a> to visit the Oakland Super Heroes Mural Project website and learn more!</p>
+          </div> <!-- end of pair wrapper -->
         </div> <!-- end of content -->
       </div> <!-- end of slide -->
 
 
       <!-- Professional Development Slide -->
-      <div class="section" data-navColor="light">
+      <div class="section" id="pro-dev" data-navColor="light">
+        <div class="chapter-circles"></div>
         <h1 class="main-heading">Professional Development</h1>
         <div class="section-main-content">
           <p>ArtEsteem Art Instructors provide professional development consulting and hands-on training for educators in art curricula –and also in support of academic subjects (e.g. science and social studies) – to help teachers develop visually engaging and hands-on methods that improve student involvement, comprehension, and critical thinking.</p>
@@ -281,16 +345,18 @@
 
 
       <!-- Impact Slide -->
-      <div class="section" data-navColor="light">
+      <div class="section" id="impact" data-navColor="light">
+        <!-- <div class="top-swatch"></div> -->
+        <div class="chapter-circles"></div>
         <h1 class="main-heading">Impact</h1>
         <div class="section-main-content">
-          <h3 style="color:red" class="subtitle">Need short Introduction to facts, figures, and anecdotes.</h3>
+          <h3 class="subtitle">AHC captures the impact of our work with youth, parents, teachers and artists through surveys, evaluations, exhibitions and story-telling.</h3>
           <ul>
             <li>Eighty six percent (86%) of teachers who participated in ArtEsteem’s Professional Development said they see the value of arts integration.</li>
             <li>Ninety two percent (92%) of teacher participants said they learned new methods for integrating the arts with their core content curriculum.</li>
           </ul>
 
-          <h3 class="subtitle">Hear's what people have to see about AHC's ArtEsteem Program:</h3>
+          <h3 class="subtitle">Here's what people have to say about AHC's ArtEsteem Program:</h3>
 
 
           <div id="recommendations" class="owl-carousel">
@@ -327,7 +393,10 @@
       </div> <!-- end of slide -->
 
       <!-- Reach Slide -->
-      <div class="section" data-navColor="dark">
+      <div class="section" id="reach" data-navColor="dark">
+        <div class="top-swatch"></div>
+        <div class="pair-wrapper">
+        <div class="chapter-circles pair"></div>
         <h1 class="main-heading">Reach</h1>
         <div class="section-main-content">
           <h3 class="subtitle">Since 1995 ArtEsteem has:</h3>
@@ -339,6 +408,7 @@
             <li>Produced 16 annual exhibitions showcasing children and youth art and performances</li>
           </ul>
         </div> <!-- end of content -->
+        </div> <!-- end of pair wrapper -->
       </div> <!-- end of slide -->
       <!-- Introduction Slide -->
 
@@ -346,31 +416,45 @@
         <h1 class="main-heading">Artwork</h1>
         <div class="section-main-content">
 
-          <div id="artwork" class="owl-carousel">
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1kWKtOV">
-              <h3 class="rec-name">Regina Gibson Regina Gibson, <span class="rec-title">age 18</span></h3>
+        <!-- <div class="artwork-container">
+            <img class="image-expand" src="img/art/artwork-1.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-2.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-3.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-4.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-5.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-6.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-7.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-8.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-9.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-10.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-11.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-12.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-13.jpg" height="100">
+            <img class="image-expand" src="img/art/artwork-14.jpg" height="100">
 
-            </div><!-- end of slide -->
+            
+          </div> -->
 
+          <div id="artwork-container" class="gallery">
+            <a href="img/art/artwork-1.jpg"><img src="img/art/artwork-1.jpg" /></a>
+            <a href="img/art/artwork-2.jpg"><img src="img/art/artwork-2.jpg" /></a>
+            <a href="img/art/artwork-3.jpg"><img src="img/art/artwork-3.jpg" /></a>
+            <a href="img/art/artwork-4.jpg"><img src="img/art/artwork-4.jpg" /></a>
+            <a href="img/art/artwork-5.jpg"><img src="img/art/artwork-5.jpg" /></a>
+            <a href="img/art/artwork-6.jpg"><img src="img/art/artwork-6.jpg" /></a>
+            <a href="img/art/artwork-7.jpg"><img src="img/art/artwork-7.jpg" /></a>
+            <a href="img/art/artwork-8.jpg"><img src="img/art/artwork-8.jpg" /></a>
+            <a href="img/art/artwork-9.jpg"><img src="img/art/artwork-9.jpg" /></a>
+            <a href="img/art/artwork-10.jpg"><img src="img/art/artwork-10.jpg" /></a>
+            <a href="img/art/artwork-11.jpg"><img src="img/art/artwork-11.jpg" /></a>
+            <a href="img/art/artwork-12.jpg"><img src="img/art/artwork-12.jpg" /></a>
+            <a href="img/art/artwork-13.jpg"><img src="img/art/artwork-13.jpg" /></a>
+            <a href="img/art/artwork-14.jpg"><img src="img/art/artwork-14.jpg" /></a>
+            <a href="img/art/artwork-15.jpg"><img src="img/art/artwork-15.jpg" /></a>
+            <!-- <a href="img/art/artwork-16.jpg"><img src="img/art/artwork-16.jpg" /></a>
+            <a href="img/art/artwork-17.jpg"><img src="img/art/artwork-17.jpg" /></a> -->
+          </div>
 
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1rnovaR">
-              <h3 class="rec-name">Karis Griffin, <span class="rec-title">Oakland Parks and Recreation</span></h3>
-            </div><!-- end of slide -->
-
-
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1oTpFsT">
-              <h3 class="rec-name">Educator, <span class="rec-title">West Oakland Middle School</span></h3>
-            </div><!-- end of slide -->
-
-
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1pgxvMu">
-              <h3 class="rec-name">Educator, <span class="rec-title">Frick Middle School</span></h3>
-            </div><!-- end of slide -->
-          </div> <!-- end of carousel -->
 
         </div> <!-- end of content -->
       </div> <!-- end of slide -->
@@ -379,31 +463,27 @@
       <div class="section" data-navColor="light">
         <h1 class="main-heading">Photos</h1>
         <div class="section-main-content">
-          <div id="photos" class="owl-carousel">
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1kWKtOV">
-              <h3 class="rec-name">Regina Gibson Regina Gibson, <span class="rec-title">age 18</span></h3>
 
-            </div><!-- end of slide -->
+          <div id="class-container" class="gallery">
+            <a href="img/school/class-1.jpg"><img src="img/school/class-1.jpg" /></a>
+            <a href="img/school/class-2.jpg"><img src="img/school/class-2.jpg" /></a>
+            <a href="img/school/class-3.jpg"><img src="img/school/class-3.jpg" /></a>
+            <a href="img/school/class-4.jpg"><img src="img/school/class-4.jpg" /></a>
+            <a href="img/school/class-5.jpg"><img src="img/school/class-5.jpg" /></a>
+            <a href="img/school/class-6.jpg"><img src="img/school/class-6.jpg" /></a>
+            <a href="img/school/class-7.jpg"><img src="img/school/class-7.jpg" /></a>
+            <a href="img/school/class-8.jpg"><img src="img/school/class-8.jpg" /></a>
+            <a href="img/school/class-9.jpg"><img src="img/school/class-9.jpg" /></a>
+            <a href="img/school/class-10.jpg"><img src="img/school/class-10.jpg" /></a>
+            <a href="img/school/class-11.jpg"><img src="img/school/class-11.jpg" /></a>
+            <a href="img/school/class-12.jpg"><img src="img/school/class-12.jpg" /></a>
+            <a href="img/school/class-13.jpg"><img src="img/school/class-13.jpg" /></a>
+            <a href="img/school/class-14.jpg"><img src="img/school/class-14.jpg" /></a>
+            <a href="img/school/class-15.jpg"><img src="img/school/class-15.jpg" /></a>
+            
+          </div>
 
 
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1rnovaR">
-              <h3 class="rec-name">Karis Griffin, <span class="rec-title">Oakland Parks and Recreation</span></h3>
-            </div><!-- end of slide -->
-
-
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1oTpFsT">
-              <h3 class="rec-name">Educator, <span class="rec-title">West Oakland Middle School</span></h3>
-            </div><!-- end of slide -->
-
-
-            <div class="recommend-slides">
-              <img class="artwork-container" src="http://bit.ly/1pgxvMu">
-              <h3 class="rec-name">Educator, <span class="rec-title">Frick Middle School</span></h3>
-            </div><!-- end of slide -->
-          </div> <!-- end of carousel -->
         </div> <!-- end of content -->
 
       </div> <!-- end of slide -->
@@ -413,7 +493,12 @@
       <div class="section" data-navColor="light">
         <h1 class="main-heading">Staff</h1>
         <div class="section-main-content" style="text-align:center">
-          <p>Need profiles loaded onto Google Drive Docs.</p>
+          <div class="column-1-3">
+            <div class="circle"></div>
+            <h1 class="staff-heading">Amana Harris</h1>
+            <h2 class="staff-title">ArtEsteem Founder and Director</h2>
+            <p>Amana Harris is a leader in the field of community arts and a well respected advocate for the arts in k-12 education. Amana serves as the Associate Director of the Attitudinal Healing Connection, Inc. (AHC), a West Oakland based organization whose mission is to eliminate violence by offering creative and educational programs that uplift the spirit to build peaceful and loving communities for all humanity. Amana has a BFA in Drawing from California College of Arts and Crafts and a Masters in Teaching from the University of San Francisco. She is a professor at the California College of the Arts and engages her students in understanding the impact of historical and current injustices on our educational systems and how the arts can play a critical role in educating, liberating and inspiring children and youth.</p>
+          </div> <!-- end of column 1 of 3 -->
         </div> <!-- end of content -->
       </div> <!-- end of slide -->
 
@@ -424,12 +509,49 @@
         <div class="section-main-content">
           <div id="contact-us">
             <h2>Attitudinal Healing Connection, Inc.</h2>
-            <ul>
-              <li>3278 West Street</li>
-              <li>Oakland, CA 95608</li>
-              <li>510.652.5530</li>
-              <li><a href="mailto:artesteem@ahc-oakland.org">artesteem@ahc-oakland.org</a></li>
-            </ul>
+            <p>Send us a message, we'd love to hear from you!</p>
+            
+
+
+
+            <!-- this is where the form can go -->
+
+            <form class="cmxform" id="commentForm" method="get" action="">
+              <fieldset>
+
+                <p>
+                  <label for="cname">Name <span class="required-ast">*</span></label>
+                  <input id="cname" name="name" autocomplete="off" minlength="2" type="text" placeholder="Type Name Here" required/>
+                </p>
+
+                <p>
+                  <label for="csubject">Subject <span class="required-ast">*</span></label>
+                  <input id="csubject" autocomplete="off" name="subject" type="text" placeholder="Type Subject Here" required/>
+                </p>
+
+                <p>
+                  <label for="cemail">E-Mail <span class="required-ast">*</span></label>
+                  <input id="cemail" autocomplete="off" type="email" name="email" placeholder="example@email.com" required/>
+                </p>
+
+                <p>
+                  <label for="ccomment">Your comment <span class="required-ast">*</span></label>
+                  <textarea id="ccomment" name="comment" required placeholder="Type your comment here"></textarea>
+                </p>
+                <p>
+                  <label for="cvalidation">Anti-Spam Question: 1 &#43; 2 &#61; _ <span class="required-ast">*</span></label>
+                  <input id="cvalidation" name="validation" type="text" autocomplete="off" placeholder="We use this to protect our site from spam!"/>
+                </p>
+                <p class="submit-button">
+                  <input class="submit" type="submit" value="Submit"/>
+                </p>
+              </fieldset>
+            </form>
+
+            <div id="slider">Message Not Sent! Make sure you answer the anti-spam question!
+            </div>
+
+            <div id="successModal">Sweet! You're message has been successfully sent!</div>
             
 
           </div>
@@ -440,7 +562,9 @@
 
 
     </div> <!-- end of fullpage.js container -->
-
-
+    <!-- lightbox plugin -->
+    <script src="js/"></script>
+    <script async src="js/form.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
   </html>

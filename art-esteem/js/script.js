@@ -97,13 +97,13 @@ $(document).ready(function(){
             // }
 
         
-
-
-        if(index == '1'){
-                //navList.addClass('hiddenNav');
-                navTitle.addClass('whiteTitle');
-                navListElements.addClass('whiteTitle');
-            }
+        //commented out because nav font color will not change
+        //also commented out in the CSS, if this code is implemented again, the CSS class needs to be 'uncommented'
+        // if(index == '1'){
+        //         //navList.addClass('hiddenNav');
+        //         navTitle.addClass('whiteTitle');
+        //         navListElements.addClass('whiteTitle');
+        //     }
 
             if(index == '4'){
             	//subMenu.slideDown();

@@ -8,7 +8,10 @@ body, html {
   height: 100%;
   font-family: "ff-tisa-web-pro", sans-serif;
   background: #ecf0f1;
-  color: #2c3e50; }
+  color: #293A4A; }
+
+.bold {
+  font-weight: 700; }
 
 /*?????????????????????????????????????????????
 ?????????????????????????????????????????????
@@ -67,7 +70,7 @@ a {
   transition: 0.3s all; }
 
 a:hover {
-  color: #3498db; }
+  color: #293A4A; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -86,13 +89,16 @@ h1, h2, h3, h4, h5, h6 {
 nav {
   position: fixed;
   top: 0px;
-  left: 15px;
-  padding: 10px;
+  left: 0px;
   transition: 0.3s all;
-  z-index: 100; }
+  z-index: 100;
+  background: #58B6F2;
+  height: 100%;
+  min-width: 200px; }
 
 nav h1 {
-  color: #2c3e50; }
+  color: #293A4A;
+  padding-left: 20px; }
 
 nav ul {
   position: relative;
@@ -108,32 +114,55 @@ nav ul, nav li {
 nav ul li a {
   text-decoration: none;
   transition: 0.3s all;
-  color: #95a5a6; }
+  color: #336A94; }
 
 #mainNav li a:hover {
   text-decoration: underline; }
 
 nav li {
-  margin-bottom: 10px; }
+  margin-bottom: 2px; }
 
 #mainNav .active a {
   padding-left: 10px;
-  color: #2c3e50 !important; }
+  color: #293A4A !important; }
 
 #mainNav {
-  transition: 0.5s all; }
+  transition: 0.5s all;
+  padding-left: 20px;
+  padding-right: 10px; }
 
 .hiddenNav {
   left: -250px; }
-
-.whiteTitle {
-  color: #fff !important; }
 
 .lightness {
   color: #fff !important; }
 
 .darkness {
   color: #333 !important; }
+
+#nav-bottom {
+  min-width: 100% !important;
+  background: #293A4A;
+  position: absolute;
+  bottom: 0px; }
+
+#nav-bottom a:hover {
+  color: #58B6F2; }
+
+#nav-bottom > ul {
+  width: 100%;
+  color: white;
+  font-size: 11px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#nav-bottom > ul > li {
+  margin: 0px;
+  margin-top: 1px; }
+
+.footer-title {
+  font-weight: 900; }
 
 /*
 //////////////////////////////////////
@@ -152,19 +181,33 @@ nav li {
 
 .slideDown {
   visibility: visible !important;
-  margin: 10px 0px !important;
-  margin-bottom: 10px !important;
-  margin-left: 30px !important;
+  margin: 2px 0px !important;
+  margin-bottom: 2px !important;
+  margin-left: 20px !important;
   opacity: 1 !important;
-  height: 60px !important; }
+  height: 52px !important; }
+  .slideDown li {
+    font-style: italic;
+    color: #2980b9;
+    transition: 0.3s all; }
+  .slideDown li:hover {
+    text-decoration: underline;
+    color: #293A4A; }
 
 .slideDown2 {
   visibility: visible !important;
-  margin: 10px 0px !important;
-  margin-bottom: 10px !important;
-  margin-left: 30px !important;
+  margin: 2px 0px !important;
+  margin-bottom: 2px !important;
+  margin-left: 20px !important;
   opacity: 1 !important;
-  height: 100px !important; }
+  height: 82px !important; }
+  .slideDown2 li {
+    font-style: italic;
+    color: #2980b9;
+    transition: 0.3s all; }
+  .slideDown2 li:hover {
+    text-decoration: underline;
+    color: #293A4A; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -177,17 +220,68 @@ nav li {
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /* Custom Slide CSS */
+.chapter-circles {
+  background: #293A4A;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin: 0 auto;
+  border: 2px solid white;
+  z-index: 2;
+  background-size: cover !important;
+  background-position: center left !important; }
+
+.top-swatch {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 400px;
+  background: #F28E37;
+  z-index: 1;
+  background-size: cover !important;
+  background-position: center !important; }
+
+#circle-omp {
+  background: url(../img/mural/ppl.jpg); }
+
+#circle-intro {
+  background: url(../img/school/class-6.jpg); }
+
+#swatch-intro {
+  background: url(../img/school/class-12.jpg); }
+
+#top-swatch-OMP {
+  height: 400px;
+  background: url(../img/mural/far.jpg); }
+
+.pair {
+  position: absolute;
+  top: -90px;
+  left: 280px; }
+
+.pair-wrapper {
+  position: relative;
+  background: white;
+  display: inline-block;
+  border: 1px solid #ddd;
+  padding: 30px;
+  border-radius: 20px;
+  padding-top: 55px;
+  z-index: 5; }
+
 .dark-filter {
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  padding-left: 10%; }
 
 .section {
   text-align: center;
-  padding: 0px 50px; }
+  padding-left: 10%; }
 
 .main-heading-intro {
   font-family: 'rooney-web', sans-serif;
@@ -197,6 +291,10 @@ nav li {
   font-size: 1.4em;
   font-weight: 700;
   line-height: 1.2em; }
+
+.main-heading {
+  text-decoration: underline;
+  text-align: center; }
 
 .section-main-content {
   max-width: 650px;
@@ -213,6 +311,9 @@ nav li {
 /* owl slider styles */
 .recommend-slides h1, .recommend-slides h3 {
   text-align: center; }
+
+#recommendations {
+  max-height: 400px; }
 
 .rec-name {
   font-weight: 100; }
@@ -237,10 +338,11 @@ nav li {
   right: -60px; }
 
 .owl-carousel {
-  background: white;
-  padding: 20px 40px;
+  background: #fff;
+  padding: 0px 40px;
   border-radius: 10px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin: 0 auto; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -248,12 +350,11 @@ nav li {
 /* home section */
 #home-page {
   /*background: url(http://cl.ly/image/1j2I0H3P0w0B/img_04271.jpg);*/
-  background: #333; }
+  background: #222; }
 
 #home-page {
   color: #fff;
-  font-size: 40px;
-  padding: 0px; }
+  font-size: 40px; }
 
 /* Slideshow */
 .ss-frame {
@@ -284,7 +385,39 @@ nav li {
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
+/* Intro section */
+#intro-section .fp-tableCell {
+  background: #222; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/* Oakland Mural Project section */
+.p-radius-box {
+  border-radius: 10px;
+  padding: 40px;
+  background: white;
+  border: 1px solid #aaa; }
+
+#omp .fp-tableCell {
+  background-color: #222; }
+
+#impact .fp-tableCell {
+  background-color: #F28E37; }
+
+#pro-dev .fp-tableCell {
+  background-color: #F28E37; }
+
+#reach .fp-tableCell {
+  background-color: #222; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
 /* Program section */
+#program-section .fp-tableCell {
+  background: #222; }
+
 .instructions p {
   font-weight: 900; }
 
@@ -307,24 +440,84 @@ nav li {
     color: #fff; }
 
 .inActive-link {
-  color: #cccccc !important;
-  border: #cccccc 1px solid !important; }
+  color: #ccc !important;
+  border: #ccc 1px solid !important; }
 
 .inActive-link:hover {
   cursor: default !important;
-  color: #cccccc !important;
-  border: #cccccc 1px solid !important;
+  color: #ccc !important;
+  border: #ccc 1px solid !important;
   background: none !important; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
+/* Self as Superhero section */
+#sas-section .fp-tableCell {
+  background: #A55B1A; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+#social-justice .fp-tableCell {
+  background: #A55B1A; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
 /*  artwork section  */
-.artwork-container {
+#artwork-container {
   max-width: 600px;
   max-height: 400px;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  text-align: center; }
+
+#artwork-container img {
+  max-width: 100% !important;
+  max-height: 100px !important; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  class photos section  */
+#class-container {
+  max-width: 600px;
+  max-height: 400px;
+  margin: 0 auto;
+  display: block;
+  text-align: center; }
+
+#class-container img {
+  max-width: 100% !important;
+  max-height: 100px !important; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Staff Section  */
+.circle {
+  border: 1px solid black;
+  background: white;
+  margin: 0px auto 15px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 62.5px; }
+
+.column-1-3 {
+  text-align: left; }
+
+.staff-heading {
+  font-size: 22px;
+  margin: 0;
+  text-align: center; }
+
+.staff-title {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+  text-align: center; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -333,4 +526,127 @@ nav li {
 #contact-us {
   text-align: center; }
   #contact-us ul {
-    list-style: none; }
+    list-style: none;
+    padding: 0px; }
+  #contact-us h2 {
+    margin: 0;
+    margin-bottom: -10px;
+    padding: 0; }
+
+#contact-us > form p {
+  text-align: left; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Contact Form*/
+.cmxform {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white; }
+
+form label {
+  text-align: left; }
+
+#contact-us > form p.submit-button {
+  text-align: center !important; }
+
+#slider {
+  margin: 0 auto;
+  transition: 0.3s all;
+  background: white !important;
+  color: red;
+  border: 1px solid red;
+  padding: 20px;
+  position: relative;
+  top: -90px;
+  max-width: 300px;
+  text-align: center;
+  opacity: 1;
+  z-index: -1; }
+
+.slideDownWarning {
+  top: 0px !important;
+  opacity: 1 !important; }
+
+#mybutton:hover {
+  cursor: pointer; }
+
+.error {
+  color: red;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: block;
+  margin-top: 5px; }
+
+textarea {
+  resize: vertical;
+  font-family: 'rooney-web', sans-serif;
+  font-size: 12px; }
+
+#ccomment {
+  display: block;
+  width: 100%;
+  height: 50px; }
+
+.required-ast {
+  color: red; }
+
+input {
+  width: 100%;
+  font-family: 'rooney-web', sans-serif;
+  font-size: 12px; }
+
+#successModal {
+  background: #27ae60;
+  padding: 20px;
+  margin: 0px auto;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  display: inline-block;
+  color: white; }
+
+.successVisible {
+  opacity: 1 !important; }
+
+input:focus {
+  outline: 0;
+  box-shadow: none; }
+
+.submit {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: none;
+  max-width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+  transition: 0.3s all; }
+
+.submit:hover {
+  cursor: pointer;
+  background: #2ecc71; }
+
+textarea:focus, input:focus {
+  outline: 0; }
+
+form {
+  padding: 10px;
+  border-radius: 10px; }
+
+fieldset {
+  border: none; }
+
+::-webkit-input-placeholder {
+  color: #293A4A; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #293A4A; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #293A4A; }
+
+:-ms-input-placeholder {
+  color: #293A4A; }
