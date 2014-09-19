@@ -2,8 +2,8 @@
 $(document).ready(function() {
 
 
-$('#artwork-container a').rebox();
-$('#class-container a').rebox();
+$('#artwork-container').rebox({ selector: 'a' });
+$('#class-container').rebox({ selector: 'a' });
 
 
 });

@@ -47,6 +47,12 @@ $link-color:#2980b9;
 $link-hover-color:#293A4A;
 $link-hover-color2:#58B6F2;
 
+$gala-font-color:#4C675E;
+
+//staff section
+
+$staff-member-circle-diameter: 80px;
+
 
 
 // add typeicons
@@ -264,6 +270,33 @@ nav li{
 	font-weight: 900;
 }
 
+.anniversary-icon{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height:250px;
+}
+
+.gala-learn-more{
+	background: #fff;
+	border-radius: 10px;
+	font-size: 16px;
+	padding:10px;
+	position: absolute;
+	top: 240px;
+	right: -100px;
+	color: $gala-font-color;
+	transition:0.3s all;
+}
+
+.gala-learn-more > a{
+	color:$gala-font-color !important;
+}
+
+.gala-appear{
+	right: 48px;
+}
+
 /*
 //////////////////////////////////////
 ///////////////////sub-nav
@@ -388,6 +421,7 @@ nav li{
 
 #circle-omp{background: url(../img/mural/ppl.jpg);}
 #circle-intro{background: url(../img/school/class-6.jpg);}
+#cirlce-sas{background: url(../img/self-as-superhero/book-cover.jpg);}
 
 
 // top swatches
@@ -614,6 +648,48 @@ nav li{
 
 .instructions{
 	text-align: center;
+	li{
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	
+}
+
+.select-staff{
+	background: $light-orange;
+	padding:20px;
+	position: relative;
+	height: 400px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.staff-list, .staff-list> ul, .instructor-list> ul{
+	list-style: none;
+	display: block;
+}
+
+.staff-list, .instructor-list{
+	position: absolute;
+	top:0;
+	left:0;
+	margin: 0;
+	padding-left: 20px;
+}
+
+.staff-list > li, .instructor-list > li{
+	width: $staff-member-circle-diameter;
+	height: $staff-member-circle-diameter;
+	border-radius: $staff-member-circle-diameter/2;
+	background: $darkest-blue;
+	margin: 10px 5px;
+	list-style: none;
+}
+
+.staff-info, .instructor-info{
+	background:white;
+	margin-left: 120px;
+	padding:20px;
 }
 
 .program-list{

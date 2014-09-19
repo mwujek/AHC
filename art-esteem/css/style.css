@@ -164,6 +164,29 @@ nav li {
 .footer-title {
   font-weight: 900; }
 
+.anniversary-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 250px; }
+
+.gala-learn-more {
+  background: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  position: absolute;
+  top: 240px;
+  right: -100px;
+  color: #4C675E;
+  transition: 0.3s all; }
+
+.gala-learn-more > a {
+  color: #4C675E !important; }
+
+.gala-appear {
+  right: 48px; }
+
 /*
 //////////////////////////////////////
 ///////////////////sub-nav
@@ -247,6 +270,9 @@ nav li {
 
 #circle-intro {
   background: url(../img/school/class-6.jpg); }
+
+#cirlce-sas {
+  background: url(../img/self-as-superhero/book-cover.jpg); }
 
 #swatch-intro {
   background: url(../img/school/class-12.jpg); }
@@ -423,6 +449,42 @@ nav li {
 
 .instructions {
   text-align: center; }
+  .instructions li {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.select-staff {
+  background: #F28E37;
+  padding: 20px;
+  position: relative;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px; }
+
+.staff-list, .staff-list > ul, .instructor-list > ul {
+  list-style: none;
+  display: block; }
+
+.staff-list, .instructor-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding-left: 20px; }
+
+.staff-list > li, .instructor-list > li {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background: #293A4A;
+  margin: 10px 5px;
+  list-style: none; }
+
+.staff-info, .instructor-info {
+  background: white;
+  margin-left: 120px;
+  padding: 20px; }
 
 .program-list {
   margin: 0;

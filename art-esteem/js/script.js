@@ -30,21 +30,19 @@ $(document).ready(function(){
 		navListElements.removeClass('lightness');
 		navTitle.removeClass('lightness');
 		setTimeout(function() {
-     	 navListElements.addClass('darkness');
-		navTitle.addClass('darkness');
-}, 400);
+			navListElements.addClass('darkness');
+			navTitle.addClass('darkness');
+		}, 400);
 	}
 
 	function makeNavLight(){
 		navListElements.removeClass('darkness');
 		navTitle.removeClass('darkness');
 		setTimeout(function() {
-     	navListElements.addClass('lightness');
-		navTitle.addClass('lightness');
-}, 400);
-		
+			navListElements.addClass('lightness');
+			navTitle.addClass('lightness');
+		}, 400);
 	}
-	
 
 	//fullPage.js initialization
 	$('#fullpage').fullpage({
@@ -79,11 +77,11 @@ $(document).ready(function(){
             //using index
 
             //fallback for showing nav title?
-      
+
 
             
             // navColorData = $('div.active').data('navcolor');
-     
+
 
             // if(navColorData === 'dark'){
             // 	//window.alert('dark');
@@ -93,10 +91,10 @@ $(document).ready(function(){
             // if(navColorData === 'light'){
             // 	//window.alert('light');
             // 	makeNavDark();
-            	
+
             // }
 
-        
+
         //commented out because nav font color will not change
         //also commented out in the CSS, if this code is implemented again, the CSS class needs to be 'uncommented'
         // if(index == '1'){
@@ -105,7 +103,7 @@ $(document).ready(function(){
         //         navListElements.addClass('whiteTitle');
         //     }
 
-            if(index == '4'){
+        if(index == '4'){
             	//subMenu.slideDown();
             	subMenuP.addClass('slideDown2');
             }
@@ -234,6 +232,10 @@ $(document).ready(function(){
 
 	});
 
+	 $('.anniversary-icon').hover(function(){
+	 	$('.gala-learn-more').addClass('gala-appear');
+	 });
+
 
 	 //change the colors of each section 
 	 //		using this rather than the Fullpage.js function because it can control
@@ -263,11 +265,7 @@ $(document).ready(function(){
 	//make a div to center certain link buttons 
 	$('.button-center').wrap("<div class='link-wrapper'></div>");
 
-	
-
-
 });
-
 
 
 function slideSwitch() {

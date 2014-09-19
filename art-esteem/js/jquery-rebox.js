@@ -21,7 +21,7 @@
 		selector: null,        // the selector to delegate to, should be to the <a> which contains an <img>
 		prev: '&larr;',        // use an image, text, whatever for the previous button
 		next: '&rarr;',        // use an image, text, whatever for the next button
-		loading: '%',          // use an image, text, whatever for the loading notification
+		loading: 'Loading...',          // use an image, text, whatever for the loading notification
 		close: '&times;',      // use an image, text, whatever for the close button
 		speed: 400,            // speed to fade in or out
 		zIndex: 1000,          // zIndex to apply to the outer container
