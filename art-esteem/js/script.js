@@ -53,7 +53,7 @@ $(document).ready(function(){
 		anchors: ['nav-1', 'nav-2', 'nav-3', 'nav-4', 'nav-5', 'nav-6', 'nav-7', 'nav-8', 'nav-9', 'nav-10','nav-11','nav-12','nav-13'],
 		menu: '#mainNav',
 		slidesNavigation: false,
-		autoScrolling: true,
+		autoScrolling: false,
 		onLeave: function(index, nextIndex, direction){
             //after leaving section 2
             if(index == '1' && direction =='down'){
@@ -147,12 +147,12 @@ $(document).ready(function(){
 		rewindSpeed : 1000,
 
 		//Autoplay
-		autoPlay : 3500,
+		autoPlay : 5000,
 		stopOnHover : true,
 
 		// Navigation
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["&#10140;","&#10140;"],
 		rewindNav : true,
 		scrollPerPage : false,
 
@@ -166,12 +166,12 @@ $(document).ready(function(){
 
 	});
 
+	  // carousel initialization for SAS
 
-
-	 $("#artwork").owlCarousel({
+	 $(".photo-container-under-text").owlCarousel({
 
 		// Most important owl features
-		items : 4,
+		items : 3,
 		singleItem : true,
 		itemsScaleUp : false,
 
@@ -181,12 +181,12 @@ $(document).ready(function(){
 		rewindSpeed : 1000,
 
 		//Autoplay
-		autoPlay : 3500,
+		autoPlay : 5000,
 		stopOnHover : true,
 
 		// Navigation
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["&#10140;","&#10140;"],
 		rewindNav : true,
 		scrollPerPage : false,
 
@@ -200,10 +200,11 @@ $(document).ready(function(){
 
 	});
 
-	 $("#photos").owlCarousel({
+
+	 	 $("#pro-dev-slides").owlCarousel({
 
 		// Most important owl features
-		items : 4,
+		items : 3,
 		singleItem : true,
 		itemsScaleUp : false,
 
@@ -213,12 +214,12 @@ $(document).ready(function(){
 		rewindSpeed : 1000,
 
 		//Autoplay
-		autoPlay : 3500,
+		autoPlay : 5000,
 		stopOnHover : true,
 
 		// Navigation
 		navigation : true,
-		navigationText : ["<",">"],
+		navigationText : ["&#10140;","&#10140;"],
 		rewindNav : true,
 		scrollPerPage : false,
 
@@ -231,6 +232,7 @@ $(document).ready(function(){
 		
 
 	});
+
 
 	 $('.anniversary-icon').hover(function(){
 	 	$('.gala-learn-more').addClass('gala-appear');

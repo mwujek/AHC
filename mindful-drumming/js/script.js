@@ -24,7 +24,7 @@ $(document).ready(function(){
 		anchors: ['nav-1', 'nav-2', 'nav-3', 'nav-4', 'nav-5', 'nav-6', 'nav-7', 'nav-8', 'nav-9', 'nav-10'],
 		menu: '#mainNav',
 		slidesNavigation: false,
-		autoScrolling: true,
+		autoScrolling: false,
 		onLeave: function(index, nextIndex, direction){
             //after leaving section 2
             if(index == '1' && direction =='down'){

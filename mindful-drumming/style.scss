@@ -1,4 +1,3 @@
-$nav-font-color: #2c3e50;
 $nav-font-color-inactive: #95a5a6;
 $nav-font-size: 1em;
 $nav-margin: 10px;
@@ -21,6 +20,61 @@ $circle-nav-diameter:30px;
 //heading circles
 $heading-circle-diameter:200px;
 
+$nav-font-color: #336A94;
+$nav-font-color-inactive: #336A94;
+$nav-font-size: 1em;
+$nav-margin: 2px;
+$content-width: 650px;
+
+$button-hover-color:#34495e;
+$button-border-color: #2c3e50;
+$inactive-button-color:#ccc;
+
+$link-color:#2980b9;
+$link-hover-color:#3498db;
+
+$carousel-bg:#fff;
+$carousel-padding: 20px;
+$carousel-border-radius:10px;
+$carousel-margin-top: 30px;
+
+//slide navigation items
+$circle-nav-diameter:30px;
+
+// navigation items
+$success-color:#2ecc71;
+
+
+//circle effects
+$profile-circle-diameter:125px;
+
+//chapter headings
+$top-swatch-height:400px;
+$chapter-circle-diameter:150px;
+
+//color scheme 
+//oranges
+$dark-orange:#A55B1A; //dark
+$light-orange:#F28E37; // light
+$lighter-orange:#F1923E; //lighter orange
+$brown-orange:#582F0A; //orche brown-orange
+
+//blues
+$darkest-blue:#293A4A;//darkest font color
+$dark-blue:#004250; //dark
+$light-blue:#58B6F2; //light
+$dark-gray:#222; //dark gray
+//end color scheme
+$link-color:#2980b9;
+$link-hover-color:#293A4A;
+$link-hover-color2:#58B6F2;
+
+$gala-font-color:#4C675E;
+
+//staff section
+
+$staff-member-circle-diameter: 80px;
+
 // add typeicons
 @font-face {
   font-family: 'typicons';
@@ -37,7 +91,7 @@ body,html{
 	height: 100%;
 	font-family: "ff-tisa-web-pro", sans-serif;
 	background: #ecf0f1;
-	color:$nav-font-color;
+	color:$darkest-blue;
 }
 
 /*?????????????????????????????????????????????
@@ -144,14 +198,19 @@ h1,h2,h3,h4,h5,h6{
 nav{
 	position: fixed;
 	top:0px;
-	left:15px;
-	padding: 10px;
+	left:0px;
 	transition:0.3s all;
 	z-index: 100;
+	background: $light-blue;
+	height: 100%;
+	min-width: 200px;
+
 }
 
 nav h1{
-	color:$nav-font-color;
+	color:$darkest-blue;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 
 nav ul{
@@ -179,6 +238,7 @@ nav ul li a{
 #mainNav li a:hover{
 	
 	text-decoration: underline;
+
 	
 }
 
@@ -188,19 +248,74 @@ nav li{
 
 #mainNav .active a{
 	padding-left: 10px;
-	color:$nav-font-color !important;
+	color:$darkest-blue !important;
 }
 
 #mainNav{
 	transition:0.5s all;
+	padding-left: 20px;
+	padding-right:10px;
 }
 
-.hiddenNav{
-	left: -250px;
-}
 
 .whiteTitle{
 	color: #fff !important;
+}
+
+#nav-bottom{
+ min-width: 100% !important;
+ background: $darkest-blue;
+ position: absolute;
+ bottom: 0px;
+}
+
+#nav-bottom a:hover{
+	color:$link-hover-color2;
+}
+
+#nav-bottom > ul{
+	width: 100%;
+	color: white;
+	font-size: 11px;
+	padding-left: 10px;
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+#nav-bottom > ul > li{
+	margin: 0px;
+	margin-top: 1px;
+}
+
+.footer-title{
+	font-weight: 900;
+}
+
+.anniversary-icon{
+	position: absolute;
+	top:0px;
+	right:0px;
+	height:250px;
+}
+
+.gala-learn-more{
+	background: #fff;
+	border-radius: 10px;
+	font-size: 16px;
+	padding:10px;
+	position: absolute;
+	top: 240px;
+	right: -100px;
+	color: $gala-font-color;
+	transition:0.3s all;
+}
+
+.gala-learn-more > a{
+	color:$gala-font-color !important;
+}
+
+.gala-appear{
+	right: 48px;
 }
 
 
@@ -274,13 +389,14 @@ nav li{
 	position: absolute;
 	top:0;
 	left:0;
+	padding-left: 10%;
 
 }
 
 
 .section{
 	text-align: center;
-	// padding: 0px 50px;
+	padding-left: 10%;
 }
 
 .main-heading-intro{
@@ -464,8 +580,36 @@ nav li{
 	background-position: 43% 100%;
 }
 
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Impact section  */
+#svg-container{
+	max-width: 250px;
+	margin: 0 auto;
+}
 
+#content-here{
+  list-style:none;
+  width:100%;
+  height: 300px;
+  padding-top:18px;
+  text-align:left;
+  background:$light-orange;
+  margin:20px auto;
+  border-radius:20px;
+  max-width:400px;
+  padding:20px;
+}
 
+#content-here li{
+  text-align:left;
+  margin-bottom:10px;
+}
+
+#content-here h1{
+	text-align: center;
+}
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
@@ -506,6 +650,159 @@ nav li{
 	font-weight: 900;
 }
 
+#contact-us{
+	text-align: center;
+	ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	h2{
+		margin: 0;
+		margin-bottom: -10px;
+		padding: 0;
+	}
+}
+
+#contact-us > form  p{
+	text-align: left;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Contact Form*/
+
+.cmxform{
+	max-width:400px;
+	margin:0 auto;
+	background:white;
+}
+
+form label{
+	text-align: left;
+}
+
+#contact-us > form p.submit-button{
+	text-align: center !important;
+}
+
+#slider{
+	margin:0 auto;
+	transition:0.3s all;
+	background:white !important;
+	color:red;
+	border:1px solid red;
+	padding:20px;
+	position:relative;
+	top:-90px;
+	max-width:300px;
+	text-align:center;
+	opacity:1;
+	z-index:-1;
+}
+
+.slideDownWarning{
+	top:0px !important;
+	opacity:1 !important;
+}
+
+#mybutton:hover{
+	cursor:pointer;
+}
+
+.error {
+	color:red;
+	text-transform:uppercase;
+	font-size:10px;
+	display:block;
+	margin-top:5px;
+}
+
+textarea{
+	resize:vertical;
+	font-family: 'rooney-web', sans-serif;
+	font-size: 12px;
+}
+
+#ccomment{
+	display:block;
+	width:100%;
+	height:50px;
+}
+
+.required-ast{
+	color:red;
+}
+
+input{
+	width:100%;
+	font-family: 'rooney-web', sans-serif;
+	font-size: 12px;
+}
+#successModal{
+	background:#27ae60;
+	padding: 20px;
+	margin: 0px auto;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+	border-radius: 10px;
+	display: inline-block;
+	color: white;
+}
+.successVisible{
+	opacity:1 !important;
+}
+
+input:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.submit{
+	border:1px solid black;
+	border-radius: 5px;
+	background:none;
+	max-width: 150px;
+	padding:10px;
+	margin: 0 auto;
+	transition:0.3s all;
+}
+
+.submit:hover{
+	cursor: pointer;
+	background:$success-color;
+}
+
+textarea:focus, input:focus{
+	outline: 0;
+}
+
+form{
+	padding: 10px;
+	border-radius: 10px;
+}
+
+fieldset{
+	border:none;
+}
+
+::-webkit-input-placeholder {
+   color: $darkest-blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $darkest-blue;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $darkest-blue;  
+}
+
+:-ms-input-placeholder {  
+   color: $darkest-blue;  
+}
+
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
@@ -515,5 +812,28 @@ nav li{
 	img{
 		height: 400px;
 	}
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Accordion  */
+
+.accordion {
+    margin:1em 0
+}
+.accordion h3 {
+    background:url('http://www.epa.gov/region1/images2/misc/accordion-default.jpg') no-repeat right top #559b6a;
+    color:#fff;
+    cursor:pointer;
+    margin:0;
+    padding:4px 10px
+}
+.accordion h3.current {
+    background:url('http://www.epa.gov/region1/images2/misc/accordion-active.jpg') no-repeat right top #4289aa;
+    cursor:default
+}
+.accordion div.pane {
+    padding:5px 10px
 }
 

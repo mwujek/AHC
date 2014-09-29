@@ -27,6 +27,8 @@
 		zIndex: 1000,          // zIndex to apply to the outer container
 		cycle: true,           // whether to cycle through galleries or stop at ends
 		captionAttr: 'title',  // name of the attribute to grab the caption from
+		infoAttr: 'artwork-info',  // name of the attribute to grab the caption from
+		artistAttr: 'artist',  // name of the attribute to grab the caption from
 		template: 'image',     // the default template to be used (see templates below)
 		templates: {           // define templates to create the elements you need function($item, settings)
 			image: function($item, settings, callback){ 
@@ -65,7 +67,7 @@
 							'<a href="#" class="'+ t.settings.theme +'-prev '+ t.settings.theme +'-button">'+ t.settings.prev +'</a>' +
 							'<a href="#" class="'+ t.settings.theme +'-next '+ t.settings.theme +'-button">'+ t.settings.next +'</a>' +
 							'<div class="'+ t.settings.theme +'-contents"></div>'+
-							'<div class="'+ t.settings.theme +'-caption"><p></p></div>' +
+							'<div class="'+ t.settings.theme +'-caption"><div></div></div>' +
 						'</div>').appendTo('body').css('zIndex',t.settings.zIndex).fadeIn(t.settings.speed)						
 						.on('click.rebox','.'+t.settings.theme +'-close', function(e){ e.preventDefault(); t.close(); })
 						.on('click.rebox','.'+t.settings.theme +'-next', function(e){ e.preventDefault(); t.next(); })
@@ -106,7 +108,9 @@
 				var t = this,
 					$item = $(t.$items[i]),
 					captionVal = $item.attr(t.settings.captionAttr),
-					$cap = t.$box.children('.'+ t.settings.theme +'-caption')[captionVal?'show':'hide']().children('p').text(captionVal),
+					infoVal = $item.attr(t.settings.infoAttr),
+					artistVal = $item.attr(t.settings.artistAttr),
+					$cap = t.$box.children('.'+ t.settings.theme +'-caption')[captionVal?'show':'hide']().children('div').html("<h1>"+captionVal+"</h1>" +"<h2>"+artistVal+"</h2>"+ "<p>"+infoVal+"</p>"),
 					$bi = t.$box.children('.'+ t.settings.theme +'-contents'),
 					$img = null;
 

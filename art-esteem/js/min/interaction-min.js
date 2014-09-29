@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".photo-container-under-text > figure").hover(function(){var n=$(this).find("figcaption");n.addClass("show-caption")},function(){var n=$(this).find("figcaption");n.removeClass("show-caption")})});

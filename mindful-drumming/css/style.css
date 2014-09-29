@@ -8,7 +8,7 @@ body, html {
   height: 100%;
   font-family: "ff-tisa-web-pro", sans-serif;
   background: #ecf0f1;
-  color: #2c3e50; }
+  color: #293A4A; }
 
 /*?????????????????????????????????????????????
 ?????????????????????????????????????????????
@@ -67,7 +67,7 @@ a {
   transition: 0.3s all; }
 
 a:hover {
-  color: #3498db; }
+  color: #293A4A; }
 
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -97,13 +97,17 @@ h1, h2, h3, h4, h5, h6 {
 nav {
   position: fixed;
   top: 0px;
-  left: 15px;
-  padding: 10px;
+  left: 0px;
   transition: 0.3s all;
-  z-index: 100; }
+  z-index: 100;
+  background: #58B6F2;
+  height: 100%;
+  min-width: 200px; }
 
 nav h1 {
-  color: #2c3e50; }
+  color: #293A4A;
+  padding-left: 20px;
+  padding-right: 10px; }
 
 nav ul {
   position: relative;
@@ -119,26 +123,72 @@ nav ul, nav li {
 nav ul li a {
   text-decoration: none;
   transition: 0.3s all;
-  color: #95a5a6; }
+  color: #336A94; }
 
 #mainNav li a:hover {
   text-decoration: underline; }
 
 nav li {
-  margin-bottom: 10px; }
+  margin-bottom: 2px; }
 
 #mainNav .active a {
   padding-left: 10px;
-  color: #2c3e50 !important; }
+  color: #293A4A !important; }
 
 #mainNav {
-  transition: 0.5s all; }
-
-.hiddenNav {
-  left: -250px; }
+  transition: 0.5s all;
+  padding-left: 20px;
+  padding-right: 10px; }
 
 .whiteTitle {
   color: #fff !important; }
+
+#nav-bottom {
+  min-width: 100% !important;
+  background: #293A4A;
+  position: absolute;
+  bottom: 0px; }
+
+#nav-bottom a:hover {
+  color: #58B6F2; }
+
+#nav-bottom > ul {
+  width: 100%;
+  color: white;
+  font-size: 11px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#nav-bottom > ul > li {
+  margin: 0px;
+  margin-top: 1px; }
+
+.footer-title {
+  font-weight: 900; }
+
+.anniversary-icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 250px; }
+
+.gala-learn-more {
+  background: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 10px;
+  position: absolute;
+  top: 240px;
+  right: -100px;
+  color: #4C675E;
+  transition: 0.3s all; }
+
+.gala-learn-more > a {
+  color: #4C675E !important; }
+
+.gala-appear {
+  right: 48px; }
 
 /*
 //////////////////////////////////////
@@ -157,9 +207,9 @@ nav li {
 
 .slideDown {
   visibility: visible !important;
-  margin: 10px 0px !important;
-  margin-bottom: 40px !important;
-  margin-left: 30px !important;
+  margin: 2px 0px !important;
+  margin-bottom: 8px !important;
+  margin-left: 6px !important;
   opacity: 1 !important;
   height: 72px !important; }
 
@@ -180,10 +230,12 @@ nav li {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  padding-left: 10%; }
 
 .section {
-  text-align: center; }
+  text-align: center;
+  padding-left: 10%; }
 
 .main-heading-intro {
   font-family: 'rooney-web', sans-serif;
@@ -194,7 +246,7 @@ nav li {
   line-height: 1.2em; }
 
 .section-main-content {
-  max-width: 700px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: left;
   line-height: 22px; }
@@ -232,7 +284,7 @@ nav li {
   right: -60px; }
 
 .owl-carousel {
-  background: white;
+  background: #fff;
   padding: 20px 40px;
   border-radius: 10px;
   margin-top: 30px; }
@@ -328,6 +380,33 @@ nav li {
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
+/*  Impact section  */
+#svg-container {
+  max-width: 250px;
+  margin: 0 auto; }
+
+#content-here {
+  list-style: none;
+  width: 100%;
+  height: 300px;
+  padding-top: 18px;
+  text-align: left;
+  background: #F28E37;
+  margin: 20px auto;
+  border-radius: 20px;
+  max-width: 400px;
+  padding: 20px; }
+
+#content-here li {
+  text-align: left;
+  margin-bottom: 10px; }
+
+#content-here h1 {
+  text-align: center; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
 /*  who section  */
 .who em {
   font-style: normal;
@@ -358,6 +437,134 @@ nav li {
 .contact-info li:first-child {
   font-weight: 900; }
 
+#contact-us {
+  text-align: center; }
+  #contact-us ul {
+    list-style: none;
+    padding: 0px; }
+  #contact-us h2 {
+    margin: 0;
+    margin-bottom: -10px;
+    padding: 0; }
+
+#contact-us > form p {
+  text-align: left; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*Contact Form*/
+.cmxform {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white; }
+
+form label {
+  text-align: left; }
+
+#contact-us > form p.submit-button {
+  text-align: center !important; }
+
+#slider {
+  margin: 0 auto;
+  transition: 0.3s all;
+  background: white !important;
+  color: red;
+  border: 1px solid red;
+  padding: 20px;
+  position: relative;
+  top: -90px;
+  max-width: 300px;
+  text-align: center;
+  opacity: 1;
+  z-index: -1; }
+
+.slideDownWarning {
+  top: 0px !important;
+  opacity: 1 !important; }
+
+#mybutton:hover {
+  cursor: pointer; }
+
+.error {
+  color: red;
+  text-transform: uppercase;
+  font-size: 10px;
+  display: block;
+  margin-top: 5px; }
+
+textarea {
+  resize: vertical;
+  font-family: 'rooney-web', sans-serif;
+  font-size: 12px; }
+
+#ccomment {
+  display: block;
+  width: 100%;
+  height: 50px; }
+
+.required-ast {
+  color: red; }
+
+input {
+  width: 100%;
+  font-family: 'rooney-web', sans-serif;
+  font-size: 12px; }
+
+#successModal {
+  background: #27ae60;
+  padding: 20px;
+  margin: 0px auto;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+  display: inline-block;
+  color: white; }
+
+.successVisible {
+  opacity: 1 !important; }
+
+input:focus {
+  outline: 0;
+  box-shadow: none; }
+
+.submit {
+  border: 1px solid black;
+  border-radius: 5px;
+  background: none;
+  max-width: 150px;
+  padding: 10px;
+  margin: 0 auto;
+  transition: 0.3s all; }
+
+.submit:hover {
+  cursor: pointer;
+  background: #2ecc71; }
+
+textarea:focus, input:focus {
+  outline: 0; }
+
+form {
+  padding: 10px;
+  border-radius: 10px; }
+
+fieldset {
+  border: none; }
+
+::-webkit-input-placeholder {
+  color: #293A4A; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #293A4A; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #293A4A; }
+
+:-ms-input-placeholder {
+  color: #293A4A; }
+
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
@@ -366,3 +573,24 @@ nav li {
   text-align: center; }
   .photo-slides img {
     height: 400px; }
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
+/*  Accordion  */
+.accordion {
+  margin: 1em 0; }
+
+.accordion h3 {
+  background: url("http://www.epa.gov/region1/images2/misc/accordion-default.jpg") no-repeat right top #559b6a;
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+  padding: 4px 10px; }
+
+.accordion h3.current {
+  background: url("http://www.epa.gov/region1/images2/misc/accordion-active.jpg") no-repeat right top #4289aa;
+  cursor: default; }
+
+.accordion div.pane {
+  padding: 5px 10px; }

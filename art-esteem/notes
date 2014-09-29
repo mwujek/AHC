@@ -1,52 +1,42 @@
-##Photos:
-- Staff
-- Self as Superhero (one sectio)
-##Copy:
-- Staff
-- Self as Superhero (two sections)
-- 
 
+##artwork/photos:
+- descriptions, longer paragraph
+- Make modal window to the right
+- Constrain to 50% (landscape photos)
+- No captions for photos
 
+##Reach
+-google doc changes (number)
 
-Mindful Drumming
+##Impact
+- vertical/horizontally center the quote section, and arrows (add HTML marks)
 
-
-notes:
-
-<!-- navigation: orange instead of 
-programs: 
-- 'view other programs' remove this
-- FDuring in 'cultural art' -->
-
-<!-- remove "View images and stories here:"" -->
-
-Self as Super Hero:
-OMP: will send new photos, use placeholder instead
-
-<!-- Impact: subtitle changed in google doc -->
-<!-- - 2 typos Hear's see, say
- -->
-
-artwork/photos:
-- add arrows for navigation
-- descriptions
-
-<!-- contact us:
-- Type Name
-- "we use this to protect our site from spam" -->
-
-Reach
--google doc changes
--this need to be an infographic, not a list
 
 ##staff
-- add our team
-    + 2 more circles
-- add artesteem instructors
-    + circles, click to get info
+- for staff-info, instructor-info vertically center all content windows and profile pictures.
+- color changes / pictures (combination)
 
 ##self as super hero
 - typos at the end
-- add image of book in header circle
+- Top section = photos
+
+##general notes
+
+- Reach, Impact, SJ have a similar scheme/layout
+- Look through the OMP photos
+- make placeholder for vimeo video on the home page (image with link to video)
+- seperate colors for links to SAS, and programs (change class name)
+- cirric. change the index value to fix buttons
+- OMP circle, not centers (check padding and margins)
+- Add accordion to professional development
+
+
+#mindful Drumming
+- illustration for drum/pie chart
+- Who Section > add circle with profile photo
+- add business/organization to contact form on MD
+- move photos above 'schedule a workshop
+- add the 25th ann. banner
+- home page: add "A Program of Attitudinal Healing Connection"
 
 
