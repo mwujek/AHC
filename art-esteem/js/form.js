@@ -1,5 +1,5 @@
 var button = $('.submit');
-var emailRecipient = 'mattwujek@gmail.com';
+var emailRecipient = 'communications@ahc-oakland.org';
 var errorWaitTime = 5000;
 var formSelector = $('#commentForm');
 var successModal = $('#successModal');
@@ -28,7 +28,8 @@ function sendEmail(name, subject, comment, email){
         'html': '<p><em>Message from '+name+':</em></p><p>'+comment+'</p>'
       }
     }
-  }).done(function(response) {
+  }).done(function() {
+    //}).done(function(response) {
    //console.log(response); // if you're into that sorta thing
  });
 }

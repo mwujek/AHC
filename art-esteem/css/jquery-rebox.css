@@ -3,7 +3,7 @@
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIElEQVQ4T2NkYGDYDMRkA8ZRAxhGw4BhNAyA+WAYpAMAIFgLQfO9BoEAAAAASUVORK5CYII=);
     background: rgba(0, 0, 0, 0.7); }
 .rebox *{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
-.rebox-contents {z-index: 999; position: absolute; top: 5%; left: 5%; text-align: center; width: 90%; height: 90%; }
+.rebox-contents {z-index: 999; position: absolute; top: 5%; left: 5%; text-align: center; width: 90%; height: 90%; margin-left: 70px !important;}
 .rebox-contents .rebox-content { border: 5px solid #fff; box-shadow: 0 0 20px #000; border-radius: 1px; max-width: 100%; max-height: 100%; }
 .rebox-loading { width: 31px; height: 31px; margin: -16px 0 0 -16px; position: absolute; top: 48%; left: 50%; }
 
@@ -15,8 +15,8 @@
 .rebox-button:hover,
 .rebox-button:focus { opacity: 1; }
 .rebox-close { right: 10px; top: 10px; }
-.rebox-next { right: 10px; top: 48%; }
-.rebox-prev { left: 10px; top: 48%; }
+.rebox-next { right: 6%; top: 48%; }
+.rebox-prev { left: 18%; top: 48%; }
 
 
 .rebox-caption {
@@ -27,9 +27,9 @@ text-align: center;
 z-index: 1000;
 background: none repeat scroll 0% 0% #F28E37;
 padding: 10px;
-width: 40%;
-left: 30%;
-top: 410px;
+width: 65%;
+left: 23%;
+/*top: 410px;*/
  }
 .rebox-caption p {
 	margin: 0 auto;

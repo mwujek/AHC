@@ -34,15 +34,21 @@ $chapter-circle-diameter:150px;
 
 //color scheme 
 //oranges
-$dark-orange:#FC9F2A; //dark
-$light-orange:#F28E37; // light
-$lighter-orange:#F1923E; //lighter orange
+// $dark-orange:#FC9F2A; //dark
+// $light-orange:#F28E37; // light
+
+$dark-orange:#E78543; //dark
+$light-orange:#E78543; // light
+$lighter-orange:#E78543; //lighter orange
 $brown-orange:#582F0A; //orche brown-orange
+$brown: #9C6A3D;
+
 
 //blues
 $darkest-blue:#293A4A;//darkest font color
 $dark-blue:#004250; //dark
-$light-blue:#3B8EDB; //light
+// $light-blue:#3B8EDB; //light
+$light-blue:#888; //light
 $dark-gray:#222; //dark gray
 //end color scheme
 $link-color:#2980b9;
@@ -53,7 +59,7 @@ $gala-font-color:#4C675E;
 
 //staff section
 
-$staff-member-circle-diameter: 80px;
+$staff-member-circle-diameter: 75px;
 
 
 
@@ -274,8 +280,8 @@ nav li{
 
 .anniversary-icon{
 	position: absolute;
-	top: -155px;
-	right: 45px;
+	top: -179px;
+	right: -15px;
 	width: 65%;
 }
 
@@ -315,6 +321,25 @@ nav li{
 .sub-menu{}
 .sub-menu:hover{
 	cursor: pointer;
+}
+
+.slideDown3{
+	visibility: visible !important;
+	margin: $nav-margin 0px !important;
+	margin-bottom: $nav-margin !important;
+	margin-left: $nav-margin*10 !important;
+	opacity: 1 !important;
+	height: 52px !important;
+		li{
+			font-style: italic;
+			color:$darkest-blue;
+			transition:0.3s all;
+		}
+		li:hover{
+			text-decoration: underline;
+			color:$darkest-blue;
+		}
+
 }
 
 .slideDown{
@@ -420,6 +445,7 @@ nav li{
 	background-size: cover !important;
 	background-position: center !important;
 	border-bottom: 1px solid white;
+	overflow: hidden;
 }
 
 .top-swatch-programs{
@@ -427,7 +453,7 @@ nav li{
 	top:0px;
 	width: 20%;
 	padding: 0px;
-	height: $top-swatch-height;
+	height: $top-swatch-height + 35px;
 	background: white;
 }
 .top-swatch-programs ul, .top-swatch-programs li{
@@ -453,11 +479,11 @@ nav li{
 #visual-art-slide .first-swatch-programs{background: url(../img/new/VisualArts1-11.54.44-PM.jpg); background-position: center center !important;}
 #visual-art-slide .second-swatch-programs{background: url(../img/new/VisualArts2-11.54.44-PM.jpg); background-position: center center !important;}
 //cultural art
-#cultural-art-slide .first-swatch-programs{background: url(../img/new/CulturalArts3-11.54.44-PM.jpg);}
-#cultural-art-slide .second-swatch-programs{background: url(../img/new/CulturalArts2-11.54.23-PM.jpg); background-position: center -110px !important; }
+#cultural-art-slide .first-swatch-programs{background: url(../img/new/CulturalArts3-11.54.44-PM.jpg); background-position: center top !important; background-size: 120% !important;}
+#cultural-art-slide .second-swatch-programs{background: url(../img/new/CulturalArts2-11.54.23-PM.jpg); background-position: center -201px !important; }
 //fashion design
-#fashion-slide .first-swatch-programs{background: url(../img/new/FashionDesign1.jpg);}
-#fashion-slide .second-swatch-programs{background: url(../img/new/FashionDesign2-11.54.44-PM.jpg);}
+#fashion-slide .first-swatch-programs{background: url(../img/new/FashionDesign2-11.54.44-PM.jpg); background-position: 0px -30px;}
+#fashion-slide .second-swatch-programs{background: url(../img/new/FashionDesign1.jpg);}
 //family nights
 #family-nights-slide .first-swatch-programs{background: url(../img/new/FamilyNight1-11.54.44-PM.jpg);}
 #family-nights-slide .second-swatch-programs{background: url(../img/new/FamilyNight2-11.54.44-PM.jpg);}
@@ -473,7 +499,6 @@ nav li{
 
 // top swatches
 
-#swatch-intro{background: url(../img/school/class-12.jpg);}
 
 #top-swatch-OMP{
 	height: $top-swatch-height;
@@ -517,6 +542,7 @@ nav li{
 	z-index: 200;
 	position: relative;
 	top:-120px;
+	text-shadow:1px 1px 2px #222;
 }
 
 
@@ -589,7 +615,7 @@ nav li{
 .owl-prev, .owl-next{
 	font-family: sans-serif;
 	position: absolute;
-	background: white;
+	background: $light-blue;
 	width:$circle-nav-diameter;
 	height:$circle-nav-diameter;
 	line-height: 32px;
@@ -659,26 +685,27 @@ nav li{
 }
 
 #first{
-	background: url('../img/new-low-exposure/HomePage1-11.54.44-PM.jpg');
+	background: url('../img/sept29/HomePage1.jpg');
 }
 
 #second{
-	background: url('../img/new-low-exposure/HomePage2-11.54.44-PM.jpg');
+	background: url('../img/sept29/HomePage2.jpg');
 }
 
 #third{
-	background: url('../img/new-low-exposure/HomePage3-11.54.44-PM.jpg');
+	background: url('../img/sept29/HomePage3.jpg');
 }
 
 #fourth{
-	background: url('../img/new-low-exposure/Reach1-11.54.44-PM.jpg');
+	background: url('../img/sept29/HomePage4.jpg');
 }
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /* Intro section */
 #intro-section .fp-tableCell{
-	background: $dark-gray;
+	background: url(../img/new/intro.jpg);
+	background-size: cover;
 }
 
 #play-video{
@@ -686,6 +713,7 @@ nav li{
 	opacity: 0.7;
 	border:1px solid white;
 	display: block;
+	width:200px;
 }
 
 #play-video:hover{
@@ -696,8 +724,10 @@ nav li{
 .video-caption{
 	font-size: 12px;
 	text-transform: uppercase;
+	color:#999;
 	margin: 0 auto;
 	text-align: center;
+	font-style: italic;
 }
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -724,16 +754,19 @@ nav li{
 	background-position: 151px center !important;
 }
 
+#impact .section-main-content{
+	margin-top: -50px;
+}
 
 
 #pro-dev .fp-tableCell{
-	background-color: $light-orange;
+	background-color: #B9DCFB;
 }
 
 #reach .fp-tableCell{
 	//background-color: url(../img/new-low-exposure/OaklandSuperHeroes1-11.54.44-PM.jpg);
 	background: url(../img/new-low-exposure/Reach1-11.54.44-PM.jpg);
-	background-size: 100%;
+	background-size: cover;
 }
 
 #reach-top-swatch{
@@ -780,6 +813,21 @@ nav li{
 // 	background-position: 40px -410px !important;
 // }
 
+
+
+
+#programs-swatch .first-swatch-programs{
+background: url(../img/sept29/Programs3.jpg);
+z-index: 50;
+width: 49.7%;
+}
+
+#programs-swatch .second-swatch-programs{
+background: url(../img/sept29/Programs2.jpg);
+z-index: 50;
+width: 49.7%;
+}
+
 .program-photos{
 	background-size: cover !important;
 	background-position: center left !important;
@@ -787,23 +835,27 @@ nav li{
 }
 
 #visual-art-slide .fp-tableCell{
-	background: $dark-gray !important;
+	background: #4B8FAF !important;
 }
 #program-section .fp-tableCell{
-	background-color: $dark-gray;
-	background: url(../img/new-low-exposure/Programs3-11.54.44-PM.jpg);
+	background: #296568;
+	
 	background-size: 100%;
 }
 
+#program-section .slide{
+	margin-top: 100px;
+}
+
 #fashion-slide .fp-tableCell{
-	background: $dark-gray;
+	background: #ED403E;
 	// background: url(../img/new-low-exposure/FashionDesign2-11.54.44-PM.jpg);
 	background-size: 100%;
 	background-position: 0px 390px !important;
 }
 
 #cultural-art-slide .fp-tableCell{
-	background: $dark-gray;
+	background: #3751A6;
 	background-size: 100%;
 }
 #cultural-art-slide .first-swatch{
@@ -817,7 +869,7 @@ nav li{
 
 
 #family-nights-slide .fp-tableCell{
-	background: $dark-gray;
+	background: #506E51;
 	// background: url(../img/new-low-exposure/FamilyNight2-11.54.44-PM.jpg);
 	background-size: 100%;
 	background-position: center 395px;
@@ -828,8 +880,8 @@ nav li{
 
 
 #programs-circle-1{
-	background: url(../img/new/Programs1-circleSize.jpg);
-	background-position: center right;
+	background: url(../img/sept29/Programs1.jpg);
+	background-position: 175px center !important;
 }
 
 #programs-circle-2{
@@ -872,7 +924,7 @@ nav li{
 	position: relative;
 	height: 400px;
 	border-radius: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	border-radius: 10px;
 }
 .staff-list, .staff-list> ul, .instructor-list> ul{
@@ -881,11 +933,11 @@ nav li{
 }
 
 .staff-list, .instructor-list{
-	position: absolute;
 	top:0;
 	left:0;
-	margin: 0;
-	padding-left: 20px;
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
 }
 
 .staff-list > li, .instructor-list > li{
@@ -893,8 +945,15 @@ nav li{
 	height: $staff-member-circle-diameter;
 	border-radius: $staff-member-circle-diameter/2;
 	background: $darkest-blue;
-	margin: 10px 5px;
+	text-align: center;
+	line-height: $staff-member-circle-diameter;
+	color:white;
+	margin: 0 4px;
+	padding: 0px;
 	list-style: none;
+	display: inline-block;
+	border:2px solid $light-orange;
+	transition:0.3s all;
 }
 
 .staff-list > li:hover, .instructor-list > li:hover{
@@ -902,11 +961,8 @@ nav li{
 }
 
 div.staff-info, div.instructor-info{
-	background:white;
-	margin-left: 120px;
 	padding:20px;
 	padding-top: 0px;
-	height:350px;
 	min-width: 75%;
 }
 
@@ -924,6 +980,7 @@ div.staff-info, div.instructor-info{
 		padding: 3px 8px;
 		margin-right: 10px;
 		transition:0.3s all;
+		font-size: 10px;
 	}
 	li:hover{
 		background-color: $button-hover-color;
@@ -948,11 +1005,38 @@ div.staff-info, div.instructor-info{
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /* Self as Superhero section */
+.sas-quote{
 
-#sas-intro .fp-tableCell{
-	background: url(../img/self-as-superhero/book-cover-large.jpg);
+	text-align: center;
+
 }
 
+#sas-slide-3 .owl-next{
+	right:-70px;
+}
+
+#sas-slide-3 .owl-prev{
+	left:-70px;
+}
+
+.sas-slides .rec-name{
+	text-align: center !important;
+}
+#sas-intro .fp-tableCell{
+	// background: url(../img/self-as-superhero/book-cover-large.jpg);
+	background: $light-orange;
+}
+#sas-intro{
+	margin-top: 100px;
+}
+#top-swatch-sas{
+	background: url(../img/self-as-superhero/book-cover-large.jpg);
+	background-size: 100% auto !important;
+	width: 33.33%;
+	background-position: 90px -90px !important;
+
+
+}
 .photo-container-under-text{
 	width: 100%;
 	padding: 10px;
@@ -974,7 +1058,7 @@ div.staff-info, div.instructor-info{
 }
 
 .photo-container-under-text img{
-	width: 400px;
+	height: 180px;
 	display: block;
 	margin: 0 auto;
 }
@@ -1037,14 +1121,24 @@ div.staff-info, div.instructor-info{
 	background-color: $dark-gray;
 }
 
+#sas-slide-2 .section-main-content{
+	width: 840px;
+}
+
+#sas-slide-2 .main-heading{
+	margin: 5px !important
+	}
+
 #sas-slide-3 .fp-tableCell{
-	background-color: $dark-orange;
+	background-color: #ED403E;
 }
 //this is the two photos on the top
 #sas-st-swatch{
 	background-color: white;
 }
-
+#sas-slide-2 .pair{
+	left:360px;
+}
 #sas-st-swatch{
 	width: 33.5%;
 
@@ -1066,13 +1160,15 @@ div.staff-info, div.instructor-info{
 }
 
 #top-swatch-pro-dev .first-swatch-programs{
-	background: url(../img/new/ProfDevelpmnt3-11.54.44-PM.jpg);
+	background: url(../img/new/ProfDevelpmnt2-11.54.44-PM.jpg);
 	background-position: center center!important;
 }
 
 #top-swatch-pro-dev .second-swatch-programs{
-	background: url(../img/new-low-exposure/ProfDevelpmnt2-11.54.44-PM.jpg);
-	background-position: center center !important;
+	background: url(../img/new/ProfDevelpmnt3-11.54.44-PM.jpg);
+	//background-position: center center !important;
+	background-size: cover !important;
+
 }
 
 .first-swatch{
@@ -1131,7 +1227,7 @@ div.staff-info, div.instructor-info{
 /*  artwork section  */
 
 #artwork-container{
-	max-width: 680px;
+	max-width: 775px;
 	max-height: 400px;
 	margin: 0 auto;
 	display: block;
@@ -1155,6 +1251,14 @@ h3.title-artwork{
 	margin-bottom: 10px;
 }
 
+#artwork .section-main-content{
+	width: 775px;
+}
+
+.art-caption{
+	bottom: 0px !important;
+}
+
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
@@ -1173,12 +1277,36 @@ h3.title-artwork{
 	max-height: 100px !important;
 }
 
+#photo-section .fp-tableCell{
+	background: $dark-gray;
+}
+
+.rebox-contents img{
+	max-width: 500px !important;
+}
+
+.photos-only{
+	margin-top: 5%  !important;
+}
+
+.rebox-next.photo-buttons{
+	top:38%;
+	right:20%;
+	background: $light-orange !important;
+}
+
+.rebox-prev.photo-buttons{
+ left:30%;
+ top:38%;
+ background: $light-orange !important;
+}
+
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /*  Staff Section  */
 #staff .fp-tableCell{
-	background: $dark-orange;
+	background: $light-orange;
 }
 .circle{
 	border: 2px solid white;
@@ -1211,36 +1339,41 @@ h3.title-artwork{
 }
 
 #erica-profile{
-	background: url(../img/staff/StaffOurTeam2.jpg);
-	background-size: 108%;
-	background-position: center 96px;
+	background: url(../img/staff/staff-members.jpg);
+	background-position: -150px 0px;
 }
 
 #kamilah-profile{
-	background: url(../img/staff/StaffOurTeam1.jpg);
-	background-size: 100%;
-	background-position: center 105px;
+	background: url(../img/staff/staff-members.jpg);
+	background-position: -75px 0px;
 }
 
 #dan-profile{
-	background: url(../img/staff/StaffArtEsteemInstructors1.jpg);
-	background-size: 100%;
-	background-position: center 105px;
+	background: url(../img/staff/staff-members.jpg);
+	background-position: 150px 0px;
 }
 #chris-profile{
-	background: url(../img/staff/StaffArtEsteemInstructors2.jpg);
-	background-size: 100%;
-	background-position: center 105px;
+	background: url(../img/staff/staff-members.jpg);
+	background-position: 75px 0px;
 }
 #justin-profile{
-	background: url(../img/staff/StaffArtEsteemInstructors3.jpg);
-	background-size: 100%;
-	background-position: center 105px;
+	background: url(../img/staff/staff-members.jpg);
+	background-position: 225px 0px;
 }
 #msK-profile{
-	background: url(../img/staff/StaffArtEsteemInstructors4.jpg);
+	background: url(../img/staff/staff-members.jpg);
+	background-position: 0px 0px;
+}
+
+#anthony-profile{
+	background: url(../img/staff/none.png);
 	background-size: 100%;
-	background-position: center 105px;
+	background-color: $dark-blue;
+	background-repeat: no-repeat;
+}
+
+.active-member{
+	border:2px white solid !important;
 }
 
 
@@ -1264,7 +1397,22 @@ h3.title-artwork{
 ///////////////////////////////////////////////////*/
 /*  Contact Us  */
 #contact-section .fp-tableCell{
-	background: $light-orange;
+	background: $brown;
+}
+
+#contact-section{
+	h1:first-child{
+		color:white;
+	}
+	h2:first-child{
+		color:wheat;
+	}
+	p{
+		color:wheat;
+	}
+	label{
+		color:$darkest-blue;
+	}
 }
 #contact-us{
 	text-align: center;
@@ -1421,6 +1569,35 @@ fieldset{
 
 :-ms-input-placeholder {  
    color: $darkest-blue;  
+}
+
+@media all and (max-width: 1250px) {
+	.top-swatch-programs li{
+		// width: 49.7%;
+		width: 49%;
+	}
+
+	#fourth{
+	background-size: 100% !important;
+	background-position: center bottom !important;
+}
+}
+@media all and (min-width: 1400px) {
+    #program-section .pair-wrapper{
+    	margin-top: -160px;
+    }
+
+    #visual-art-swatch .first-swatch-programs{
+    	background-position: center top !important;
+    }
+
+    #visual-art-swatch .second-swatch-programs{
+    	background-position: center top !important;
+    }
+
+    #cultural-art-slide .first-swatch-programs{
+    	background-position: center top !important;
+    }
 }
 
 

@@ -8,6 +8,9 @@ $(document).ready(function(){
 
 	var subMenuOMP = $('#sub-menu-OMP');
 	var subMenuLinkOMP = $('#sub-menu-OMP li.sub-menu');
+
+	var subMenuStaff = $('#sub-menu-staff');
+	var subMenuLinkStaff = $('#sub-menu-staff li.sub-menu');
 	var navColorData;
 
 
@@ -24,6 +27,10 @@ $(document).ready(function(){
 
 	function goToSlideSSH(slideSection){
 		$.fn.fullpage.moveTo(5, slideSection); 
+	}
+
+	function goToSlideStaff(slideSection){
+		$.fn.fullpage.moveTo(12, slideSection); 
 	}
 
 	function makeNavDark(){
@@ -50,7 +57,7 @@ $(document).ready(function(){
 		resize : false,
 		scrollingSpeed: 700,
 		css3: true,
-		anchors: ['nav-1', 'nav-2', 'nav-3', 'nav-4', 'nav-5', 'nav-6', 'nav-7', 'nav-8', 'nav-9', 'nav-10','nav-11','nav-12','nav-13'],
+		anchors: ['home-page-slide', 'intro-page', 'social-justice-page', 'programs-page', 'self-as-superhero-page', 'oakland-mural-project-page', 'professional-development-page', 'impact-page', 'reach-page', 'artwork-page','photos-page','staff-page','contact-us-page'],
 		menu: '#mainNav',
 		slidesNavigation: false,
 		autoScrolling: false,
@@ -69,6 +76,11 @@ $(document).ready(function(){
 
             if(index == '5'){
             	subMenuOMP.removeClass('slideDown');
+
+            }
+
+            if(index == '12'){
+            	subMenuStaff.removeClass('slideDown3');
 
             }
 
@@ -112,6 +124,11 @@ $(document).ready(function(){
             	//subMenu.slideDown();
             	subMenuOMP.addClass('slideDown');
             }
+
+            if(index == '12'){
+            	//subMenu.slideDown();
+            	subMenuStaff.addClass('slideDown3');
+            }
         }
         
     });
@@ -131,10 +148,48 @@ $(document).ready(function(){
 	 	goToSlideSSH(whichSection);
 	 });
 
+	 subMenuLinkStaff.on('click', function(e){
+	 	e = $(this);
+	 	var whichSection = e.data('index');
+	 	goToSlideStaff(whichSection);
+	 });
+
 
 	 // carousel initialization
 
 	 $("#recommendations").owlCarousel({
+
+		// Most important owl features
+		items : 4,
+		singleItem : true,
+		itemsScaleUp : false,
+
+		//Basic Speeds
+		slideSpeed : 400,
+		paginationSpeed : 800,
+		rewindSpeed : 1000,
+
+		//Autoplay
+		autoPlay : 5000,
+		stopOnHover : true,
+
+		// Navigation
+		navigation : true,
+		navigationText : ["&#10140;","&#10140;"],
+		rewindNav : true,
+		scrollPerPage : false,
+
+		//Pagination
+		pagination : true,
+		paginationNumbers: false,
+
+		// Responsive
+		responsive: true,
+		
+
+	});
+
+	 $("#sas-quotes").owlCarousel({
 
 		// Most important owl features
 		items : 4,
