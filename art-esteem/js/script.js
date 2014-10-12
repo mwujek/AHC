@@ -57,7 +57,7 @@ $(document).ready(function(){
 		resize : false,
 		scrollingSpeed: 700,
 		css3: true,
-		anchors: ['home-page-slide', 'intro-page', 'social-justice-page', 'programs-page', 'self-as-superhero-page', 'oakland-mural-project-page', 'professional-development-page', 'impact-page', 'reach-page', 'artwork-page','photos-page','staff-page','contact-us-page'],
+		anchors: ['home-page-slide', 'intro-page', 'social-justice-page', 'programs-page', 'self-as-superhero-page', 'oakland-mural-project-page', 'professional-development-page', 'impact-page', 'reach-page', 'artwork-page','photos-page','staff-page','contact-us-page','donate-page'],
 		menu: '#mainNav',
 		slidesNavigation: false,
 		autoScrolling: false,

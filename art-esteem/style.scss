@@ -278,6 +278,11 @@ nav li{
 	font-weight: 900;
 }
 
+#nav-bottom a{
+	color:#ccc !important;
+	text-decoration: underline;
+}
+
 .anniversary-icon{
 	position: absolute;
 	top: -179px;
@@ -505,6 +510,10 @@ nav li{
 	background: url(../img/mural/far.jpg);
 }
 
+#top-swatch-sas{
+	background-image: url();
+}
+
 .pair{
 	position: absolute;
 	top:-90px;
@@ -703,7 +712,7 @@ nav li{
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /* Intro section */
-#intro-section .fp-tableCell{
+#top-swatch-intro{
 	background: url(../img/new/intro.jpg);
 	background-size: cover;
 }
@@ -723,11 +732,13 @@ nav li{
 
 .video-caption{
 	font-size: 12px;
-	text-transform: uppercase;
 	color:#999;
 	margin: 0 auto;
 	text-align: center;
-	font-style: italic;
+}
+
+#intro-section .fp-tableCell{
+	background: $light-orange;
 }
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
@@ -1570,6 +1581,30 @@ fieldset{
 :-ms-input-placeholder {  
    color: $darkest-blue;  
 }
+
+//donate section
+#donate{
+	background-color: $lighter-orange !important;
+}
+
+#donate-button{
+	margin: 0 auto;
+	display: block;
+	text-transform: uppercase;
+	border: 1px solid $darkest-blue;
+	text-align: center;
+	padding: 10px 4px;
+	width:200px;
+	color: $darkest-blue;
+	text-decoration: none;
+	transition:0.3s all;
+	border-radius: 5px;
+}
+#donate-button:hover{
+	background: $darkest-blue;
+	color:#fff;
+}
+
 
 @media all and (max-width: 1250px) {
 	.top-swatch-programs li{
