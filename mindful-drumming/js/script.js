@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+
 	//var navList = $('#mainNav');
 	var navListElements = $('#mainNav li a');
 	var navTitle = $('nav h1');
@@ -215,28 +218,58 @@ $(document).ready(function(){
 
  	// FOR research test!
 
-	var articleHere = $('#article-here');
-	var keyword = ["Keyword-1","Keyword-2","Keyword-3","Keyword-4","Keyword-5"];
-	var article = ["Remo HealthRHYTHMS® Group Empowerment Drumming is an internationally acclaimed drumming company that has come out with peer- reviewed research on how group drumming positively impacts the immune system, reduces employee burnout and turnover rates, reduces student dropout rates, impacts biology on a genomic level, benefits corporate employee wellness, cultivates creativity and bonding in seniors, effects at-risk adolescents, and reduces stress.","Neurologist Barry Bittman, M.D. of the Mind-Body Wellness Center in Meadville, Pennsylvania and his research team conducted studies indicating that drum circles significantly increase the “disease fighting activity of circulating white blood cells (Natural Killer cells) that seek out and destroy cancer cells and virally-infected cells.” <a href='http://europepmc.org/abstract/MED/11191041' target='_blank'>Click here</a> to read more about Bittman’s study!","Stress Solutions, Inc., an organization that provides techniques for learning how to manage both work-related and home stress, also recognizes the healing benefits of drumming. Research supports that patients with various ailments respond positively to drumming as a form of treatment. Apparently, 'physicians are finding that Alzheimer's patients who drum can connect better with loved ones, and researchers have discovered that hearing slow, steady rhythms, such as drumbeats, helps Parkinson's patients move more steadily.'","Stress Solutions, Inc., an organization that provides techniques for learning how to manage both work-related and home stress, also recognizes the healing benefits of drumming. Research supports that patients with various ailments respond positively to drumming as a form of treatment. Apparently, 'physicians are finding that Alzheimer's patients who drum can connect better with loved ones, and researchers have discovered that hearing slow, steady rhythms, such as drumbeats, helps Parkinson's patients move more steadily.'", "Another article..."];
+ 	var articleHere = $('#article-here');
+ 	var keyword = ["Keyword-1","Keyword-2","Keyword-3","Keyword-4","Keyword-5"];
+ 	var article = ["Remo HealthRHYTHMS® Group Empowerment Drumming is an internationally acclaimed drumming company that has come out with peer- reviewed research on how group drumming positively impacts the immune system, reduces employee burnout and turnover rates, reduces student dropout rates, impacts biology on a genomic level, benefits corporate employee wellness, cultivates creativity and bonding in seniors, effects at-risk adolescents, and reduces stress.","Neurologist Barry Bittman, M.D. of the Mind-Body Wellness Center in Meadville, Pennsylvania and his research team conducted studies indicating that drum circles significantly increase the “disease fighting activity of circulating white blood cells (Natural Killer cells) that seek out and destroy cancer cells and virally-infected cells.” <a href='http://europepmc.org/abstract/MED/11191041' target='_blank'>Click here</a> to read more about Bittman’s study!","Stress Solutions, Inc., an organization that provides techniques for learning how to manage both work-related and home stress, also recognizes the healing benefits of drumming. Research supports that patients with various ailments respond positively to drumming as a form of treatment. Apparently, 'physicians are finding that Alzheimer's patients who drum can connect better with loved ones, and researchers have discovered that hearing slow, steady rhythms, such as drumbeats, helps Parkinson's patients move more steadily.'","Stress Solutions, Inc., an organization that provides techniques for learning how to manage both work-related and home stress, also recognizes the healing benefits of drumming. Research supports that patients with various ailments respond positively to drumming as a form of treatment. Apparently, 'physicians are finding that Alzheimer's patients who drum can connect better with loved ones, and researchers have discovered that hearing slow, steady rhythms, such as drumbeats, helps Parkinson's patients move more steadily.'", "Another article..."];
 
 
-	$('.research-test li').on('click', function(){
-		var whichSection = $(this).data("index");
-		whichSection -= 1;
-		articleHere.addClass('fadeOut');
+ 	$('.research-test li').on('click', function(){
+ 		var whichSection = $(this).data("index");
+ 		whichSection -= 1;
+ 		articleHere.addClass('fadeOut');
 
-		setTimeout(function() {
-			articleHere.html("<div class='spacer-2'><h1>"+keyword[whichSection]+"</h1><p>"+article[whichSection]+"</p></div>");
-		}, 400);
+ 		setTimeout(function() {
+ 			articleHere.html("<div class='spacer-2'><h1>"+keyword[whichSection]+"</h1><p>"+article[whichSection]+"</p></div>");
+ 		}, 400);
 
 
 
-		setTimeout(function() {
-			articleHere.removeClass('fadeOut');
-		}, 600);
+ 		setTimeout(function() {
+ 			articleHere.removeClass('fadeOut');
+ 		}, 600);
 
-	});
-	
+ 	});
+
+	// accordion via Chris Coyier
+	(function($) {
+
+		var allPanels = $('.accordion > dd').hide();
+		var allPanelsLinks = $('.accordion > dt > a');
+
+		$('.accordion > dt > a').click(function() {
+			$this = $(this);
+			$target =  $this.parent().next();
+
+			if(!$target.hasClass('active')){
+				allPanels.slideUp();
+				setTimeout(function(){
+					allPanels.removeClass('active');
+					allPanelsLinks.removeClass('active');
+
+				},200);
+				setTimeout(function(){
+					$target.addClass('active').slideDown();
+					$this.addClass('active');
+				},550);
+				
+			}
+
+			return false;
+		});
+
+	})(jQuery);
+
+
 
 
 });

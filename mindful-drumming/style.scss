@@ -398,7 +398,9 @@ nav li{
 	text-align: center;
 	padding-left: 10%;
 }
-
+.main-heading{
+	text-align: center;
+}
 .main-heading-intro{
 	font-family: 'rooney-web', sans-serif;
 	color:#fff;
@@ -471,7 +473,6 @@ nav li{
 
 #home-page{
 	color:#fff;
-	padding: 0px;
 }
 
 #home-page .fp-tableCell{
@@ -584,22 +585,40 @@ nav li{
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
 /*  Impact section  */
+
+#impact .section-main-content{
+	margin-top: -200px;
+}
 #svg-container{
 	max-width: 250px;
 	margin: 0 auto;
+	position: relative;
+	right: 170px;
+	top:30px;
 }
+
+#svg-container h1{
+	font-size: 22px;
+	text-align: left !important;
+}
+
+#svg-container ul{
+	padding: 0;
+	margin: 0;
+	margin-left: 16px;
+}
+
 
 #content-here{
   list-style:none;
-  width:100%;
-  height: 300px;
-  padding-top:18px;
+  position: absolute;
+  left: 290px;
+  top:0px;
   text-align:left;
-  background:$light-orange;
-  margin:20px auto;
-  border-radius:20px;
-  max-width:400px;
-  padding:20px;
+  height: 300px;
+  //background:$light-orange;
+  //border-radius:20px;
+  width:450px;
 }
 
 #content-here li{
@@ -618,6 +637,11 @@ nav li{
 .who em{
 	font-style: normal;
 	font-weight: 900;
+}
+
+#who{
+	background: url(../img/koko-profile.jpg);
+	background-size: cover;
 }
 
 /*///////////////////////////////////////////////////
@@ -817,23 +841,91 @@ fieldset{
 /*///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////*/
+// drum section (impact)
+
+
+.hover-tip-title, .hover-tip{
+	text-align: center;
+}
+.hover-tip{
+	height: 22px;
+}
+.hover-drum{
+	transition:0.3s all;
+}
+
+.hover-drum:hover{
+	cursor: pointer;
+}
+
+.hover-drum.first:hover{
+	fill:$dark-orange;
+}
+
+.hover-drum.second:hover{
+	fill:$light-orange;
+}
+
+.hover-drum.third:hover{
+	fill:$lighter-orange;
+}
+
+.hover-drum.fourth:hover{
+	fill:$light-blue;
+}
+
+.hover-drum.fifth:hover{
+	fill:$dark-blue;
+}
+
+/*///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////*/
 /*  Accordion  */
 
 .accordion {
-    margin:1em 0
+   margin: 25px auto;
+   max-width: 600px;
+   dt{
+   	transition:0.3s;
+   	a:hover{
+   		color: #555;
+   	}
+   	a {
+        display: block;
+        padding: 5px;
+        color: #aaa;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+      }
+   }
+   dt, dd {
+      padding: 12px 0px;
+      text-align: left;
+
+   }
+  dd {
+     border-top: 0; 
+     font-size: 12px;
+     margin-left: 0px;
+     margin-bottom: 30px;
+     padding: 25px;
+     box-sizing:border-box;
+     -moz-box-sizing:border-box;
+     &:last-of-type {
+       position: relative;
+       top: -1px;
+     }
+  }
 }
-.accordion h3 {
-    background:url('http://www.epa.gov/region1/images2/misc/accordion-default.jpg') no-repeat right top #559b6a;
-    color:#fff;
-    cursor:pointer;
-    margin:0;
-    padding:4px 10px
+
+dd.active{
+	background: white;
 }
-.accordion h3.current {
-    background:url('http://www.epa.gov/region1/images2/misc/accordion-active.jpg') no-repeat right top #4289aa;
-    cursor:default
+
+a.active{
+	color:#333 !important;
 }
-.accordion div.pane {
-    padding:5px 10px
-}
+
 
