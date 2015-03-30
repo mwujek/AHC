@@ -1,5 +1,11 @@
 $(document).ready(function(){
+	//nav button
 
+	var $btn = $('.nav-btn');
+
+	$btn.on('click',function(){
+		$('nav').toggleClass('nav-out');
+	});
 	//var navList = $('#mainNav');
 	var navListElements = $('#mainNav li a');
 	var navTitle = $('nav h1');

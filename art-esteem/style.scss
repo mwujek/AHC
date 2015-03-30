@@ -183,6 +183,10 @@ nav{
 	min-width: 200px;
 }
 
+.nav-out{
+	left:0px;
+}
+
 nav h1{
 	color:$darkest-blue;
 	padding-left: 20px;
@@ -929,6 +933,9 @@ width: 49.7%;
 	}
 	
 }
+#staffing-section{
+	width: 750px;
+}
 
 .select-staff{
 	padding:20px;
@@ -975,6 +982,8 @@ div.staff-info, div.instructor-info{
 	padding:20px;
 	padding-top: 0px;
 	min-width: 75%;
+	height: 280px;
+	overflow-y: auto;
 }
 
 .program-list{
@@ -1371,15 +1380,29 @@ h3.title-artwork{
 	background: url(../img/staff/staff-members.jpg);
 	background-position: 225px 0px;
 }
+#keena-profile{
+	background: url(../img/staff/StaffArtEsteemInstructorsKeena.jpg);
+	background-position: center center;
+	background-size: 120%;
+	background-repeat: no-repeat;
+}
+
+#jennifer-profile{
+	background: url(../img/staff/jennifer.jpg);
+	background-position: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 #msK-profile{
 	background: url(../img/staff/staff-members.jpg);
 	background-position: 0px 0px;
 }
 
 #anthony-profile{
-	background: url(../img/staff/none.png);
-	background-size: 100%;
-	background-color: $dark-blue;
+	background: url(../img/staff/StaffArtEsteemInstructors5.jpg);
+	background-position: center center;
+	background-size: 120%;
 	background-repeat: no-repeat;
 }
 
@@ -1605,6 +1628,26 @@ fieldset{
 	color:#fff;
 }
 
+//navigation toggle
+.nav-btn{
+	background: url(../img/menu.png);
+	width: 28px;
+	height: 28px;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	top:10px;
+	left:240px;
+	position:absolute;
+	z-index: 500;
+	background-color: white;
+	border-radius: 2px;
+	transition: 0.3s opacity;
+	opacity: 0;
+	&:hover{
+		cursor: pointer;
+	}
+}
 
 @media all and (max-width: 1250px) {
 	.top-swatch-programs li{
@@ -1633,6 +1676,20 @@ fieldset{
     #cultural-art-slide .first-swatch-programs{
     	background-position: center top !important;
     }
+}
+
+@media (max-width: 600px) {
+ 
+    nav{
+    	left:-225px;
+
+  }
+.section{
+	padding-left: 0px;
+}
+  .nav-btn{
+  	opacity: 1;
+  }
 }
 
 
